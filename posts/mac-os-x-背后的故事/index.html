@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mac OS X 背后的故事 | bimizx&#39;blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Mac OS X 背后的故事（一）力挽狂澜的 Ellen Hancock
+故事还得从 20 世纪 90 年代说起。Ellen Hancock 是本文的主人公，也是一位女英雄。她因在 IBM 的经历而被人们所熟悉。1966-1995 年间，Ellen Hancock 在 IBM 共工作了 29 年。1985 年，她成为 IBM 的副主席。在 1986-1988 年间，Ellen Hancock 担任过 IBM 通信产品的主席，并在 1992 年被选为资深副总裁。1995 年 9 月，她被时任美国国家半导体（National Semiconductor）CEO的 Gil Amelio 忽悠，跳槽来到这个企业，做执行副总裁。她在这里带领团队完成了 CompactRISC 架构，这个架构事后成为 ARM7 系列的前身。很多人早已经把她忘了，也很少有人能够在回忆时将她和 Mac OS X 联系起来。但事实上，她是让苹果放弃 Copland 转而购买 NeXT 的关键人物。
+早在 1994 年，Gil Amelio 就找好了下家 Apple，成为 Apple 董事会的成员。1997 年 2 月，Gil Amelio 从 National Semiconductor 辞职，并成为 Apple 的 CEO。为了紧跟老板的召唤，Ellen Hancock 再次被忽悠，来到了当时危机四伏的 Apple。这时是 1996 年 5 月，为什么是危机四伏呢？还得从早先的事情说起。">
+<meta name="author" content="">
+<link rel="canonical" href="/posts/mac-os-x-%E8%83%8C%E5%90%8E%E7%9A%84%E6%95%85%E4%BA%8B/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Mac OS X 背后的故事" />
+<meta property="og:description" content="Mac OS X 背后的故事（一）力挽狂澜的 Ellen Hancock
+故事还得从 20 世纪 90 年代说起。Ellen Hancock 是本文的主人公，也是一位女英雄。她因在 IBM 的经历而被人们所熟悉。1966-1995 年间，Ellen Hancock 在 IBM 共工作了 29 年。1985 年，她成为 IBM 的副主席。在 1986-1988 年间，Ellen Hancock 担任过 IBM 通信产品的主席，并在 1992 年被选为资深副总裁。1995 年 9 月，她被时任美国国家半导体（National Semiconductor）CEO的 Gil Amelio 忽悠，跳槽来到这个企业，做执行副总裁。她在这里带领团队完成了 CompactRISC 架构，这个架构事后成为 ARM7 系列的前身。很多人早已经把她忘了，也很少有人能够在回忆时将她和 Mac OS X 联系起来。但事实上，她是让苹果放弃 Copland 转而购买 NeXT 的关键人物。
+早在 1994 年，Gil Amelio 就找好了下家 Apple，成为 Apple 董事会的成员。1997 年 2 月，Gil Amelio 从 National Semiconductor 辞职，并成为 Apple 的 CEO。为了紧跟老板的召唤，Ellen Hancock 再次被忽悠，来到了当时危机四伏的 Apple。这时是 1996 年 5 月，为什么是危机四伏呢？还得从早先的事情说起。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/mac-os-x-%E8%83%8C%E5%90%8E%E7%9A%84%E6%95%85%E4%BA%8B/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-10-22T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mac OS X 背后的故事"/>
+<meta name="twitter:description" content="Mac OS X 背后的故事（一）力挽狂澜的 Ellen Hancock
+故事还得从 20 世纪 90 年代说起。Ellen Hancock 是本文的主人公，也是一位女英雄。她因在 IBM 的经历而被人们所熟悉。1966-1995 年间，Ellen Hancock 在 IBM 共工作了 29 年。1985 年，她成为 IBM 的副主席。在 1986-1988 年间，Ellen Hancock 担任过 IBM 通信产品的主席，并在 1992 年被选为资深副总裁。1995 年 9 月，她被时任美国国家半导体（National Semiconductor）CEO的 Gil Amelio 忽悠，跳槽来到这个企业，做执行副总裁。她在这里带领团队完成了 CompactRISC 架构，这个架构事后成为 ARM7 系列的前身。很多人早已经把她忘了，也很少有人能够在回忆时将她和 Mac OS X 联系起来。但事实上，她是让苹果放弃 Copland 转而购买 NeXT 的关键人物。
+早在 1994 年，Gil Amelio 就找好了下家 Apple，成为 Apple 董事会的成员。1997 年 2 月，Gil Amelio 从 National Semiconductor 辞职，并成为 Apple 的 CEO。为了紧跟老板的召唤，Ellen Hancock 再次被忽悠，来到了当时危机四伏的 Apple。这时是 1996 年 5 月，为什么是危机四伏呢？还得从早先的事情说起。"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Mac OS X 背后的故事",
+      "item": "/posts/mac-os-x-%E8%83%8C%E5%90%8E%E7%9A%84%E6%95%85%E4%BA%8B/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Mac OS X 背后的故事",
+  "name": "Mac OS X 背后的故事",
+  "description": "Mac OS X 背后的故事（一）力挽狂澜的 Ellen Hancock\n故事还得从 20 世纪 90 年代说起。Ellen Hancock 是本文的主人公，也是一位女英雄。她因在 IBM 的经历而被人们所熟悉。1966-1995 年间，Ellen Hancock 在 IBM 共工作了 29 年。1985 年，她成为 IBM 的副主席。在 1986-1988 年间，Ellen Hancock 担任过 IBM 通信产品的主席，并在 1992 年被选为资深副总裁。1995 年 9 月，她被时任美国国家半导体（National Semiconductor）CEO的 Gil Amelio 忽悠，跳槽来到这个企业，做执行副总裁。她在这里带领团队完成了 CompactRISC 架构，这个架构事后成为 ARM7 系列的前身。很多人早已经把她忘了，也很少有人能够在回忆时将她和 Mac OS X 联系起来。但事实上，她是让苹果放弃 Copland 转而购买 NeXT 的关键人物。\n早在 1994 年，Gil Amelio 就找好了下家 Apple，成为 Apple 董事会的成员。1997 年 2 月，Gil Amelio 从 National Semiconductor 辞职，并成为 Apple 的 CEO。为了紧跟老板的召唤，Ellen Hancock 再次被忽悠，来到了当时危机四伏的 Apple。这时是 1996 年 5 月，为什么是危机四伏呢？还得从早先的事情说起。",
+  "keywords": [
+    
+  ],
+  "articleBody": "Mac OS X 背后的故事（一）力挽狂澜的 Ellen Hancock\n故事还得从 20 世纪 90 年代说起。Ellen Hancock 是本文的主人公，也是一位女英雄。她因在 IBM 的经历而被人们所熟悉。1966-1995 年间，Ellen Hancock 在 IBM 共工作了 29 年。1985 年，她成为 IBM 的副主席。在 1986-1988 年间，Ellen Hancock 担任过 IBM 通信产品的主席，并在 1992 年被选为资深副总裁。1995 年 9 月，她被时任美国国家半导体（National Semiconductor）CEO的 Gil Amelio 忽悠，跳槽来到这个企业，做执行副总裁。她在这里带领团队完成了 CompactRISC 架构，这个架构事后成为 ARM7 系列的前身。很多人早已经把她忘了，也很少有人能够在回忆时将她和 Mac OS X 联系起来。但事实上，她是让苹果放弃 Copland 转而购买 NeXT 的关键人物。\n早在 1994 年，Gil Amelio 就找好了下家 Apple，成为 Apple 董事会的成员。1997 年 2 月，Gil Amelio 从 National Semiconductor 辞职，并成为 Apple 的 CEO。为了紧跟老板的召唤，Ellen Hancock 再次被忽悠，来到了当时危机四伏的 Apple。这时是 1996 年 5 月，为什么是危机四伏呢？还得从早先的事情说起。\n20 世纪 80 年代，卖可乐的 John Sculley 成为 Apple 的 CEO，随之 Steve Jobs 被轰出Apple。毕竟可乐和计算机不是一回事，因此不管是硬件还是 Mac OS，整个公司的开发项目越来越受阻。而且由于先天的不足，Mac OS 从诞生之初就不具有一个现代操作系统所应有的特性。所以，在 1987 年，开发下一代操作系统的计划呼之欲出。具体的规划是，把新的系统所需要的功能，写在一堆卡片上。短期可实现的目标，比如增加颜色支持（当时计算机仍是黑 白的），写在蓝色的卡片上；长期的目标，比如多任务功能，写在粉色的卡片上；而在可预见的未来都无法实现的长期的目标，比如加一个纯物件导向的文件系统， 就写在红色的卡片上。在这样的思路下，Mac OS 的开发团队马上就被分成两个组，一个叫蓝组，目标是在 1991 年，发布一个关于 Mac OS 的更新版本；另一个叫粉组，和蓝组同时工作，计划在 1993 年，发布一个全新的操作系统。\n1991 年 5 月 13 日，蓝组顺利按时完成开发任务，发布了 Mac OS 7（一般被称为 System 7），而粉组却没做出什么有实际用途的东西来，因此接连跳票。而且，由于 Mac OS 7 的发布缺乏人手，为了保持正常发布，常常需要从粉组抽调人员参加蓝组的开发，再加上 Apple 当时把重心放在了和 IBM 等公司的合作上（Taligent 项目）而不是在粉组上，最终导致了粉组项目夭折。而本来 Apple 指望和 IBM 合作的Taligent 项目能开发出一个可用的新系统，但后来 IBM 不跟 Apple 继续玩了，因而 Taligent 的果子又吃不到，Apple 相当郁闷。这时由于 Mac OS 有先天不足（单任务，没有内存保护），再加上 Apple 以及第三方软件的无限量增加（在这段时期，单 Apple 自己就已经加入了 QuickDraw、PowerTalk、QuickTime 等软件和技术，每一个都比 Mac OS 本身来得大），Mac OS 的问题终于大爆发。上个世纪 90 年代，Mac OS 给人的印象就是很不稳定、经常崩溃，同 Windows 95 留给 PC 用户的印象差不多，甚至更甚。\nTaligent 项目挂掉后，Apple 自己尝试过十多个不同的内部项目，但大多没做多久就夭折了。而这时正是 Windows NT 走向成熟的关键时期。眼看着日子逐渐变得不好过了，Apple 开始重新开始考虑建立下一代操作系统的事情。1994年，Mac OS 7.5（Mozart）发布后，Apple 推出新规划，建立一个全新的操作系统，以 Copland 命名（纪念 Aaron Copland，Mac OS 的发布以音乐家名字命名，和 Mac OS X 后使用猫科动物名字很不一样），这个项目将有一个全新的内核，具有类似 Windows NT 内核的所有高级特性，而老的软件都当作独立的进程模拟运行。这个项目时间紧、任务重，1995 年 3 月公布计划，预期 1996 年发布。而 Copland 后的版本 Gershwin（纪念 George Gershwin），预计 1997 年发布，将重写 Mac 的所有系统主要部件，以适合新内核的各种特性。\nCopland 将使用微内核技术，只做任务和内存分配。除此之外的所有功能，比如文件系统、硬件驱动等作为微内核上的服务运行。而 Mac OS 的所有用户界面功能将成为一个独立的框架，称为蓝盒（Blue Box，今后介绍 Mac OS X 时，我们还会遇到这个词）。所有的任务相互独立，占用独立内存，也可以用 IPC 相互交流。学过操作系统的人都知道，微内核是当时的一个热词，一个系统只有被称为微内核才可被看作是先进的，当时还有针对 Linux 系统的著名的 Tanenbaum-Torvalds 笔战。但事实证明，所有本来想做成微内核系统的成功项目都放弃了原先的设计（包括 NeXTSTEP、Windows NT），因为这种类似 Mach 微内核的系统往往难产，GNU/Mach + Hurd 之类的项目做到现在经过了20年，仍未成事，一年内搞一个微内核系统谈何容易。\n微内核还没搞成，Apple 几乎所有开发组的成员都来添乱。大家都说自己做的东西很重要，一定要加入 Copland 开发组，所以 QuickDraw GX、OpenDoc 之类的开发组产品成为新系统的核心组件，甚至类似用户界面皮肤之类的开发组都来凑热闹，马上就使 Copland 成为一个无法维护的项目。开出的计划越来越长，项目越来越多，但相关进展越来越少，完成速度越来越慢。即便做出了产品，连测试人手都不够。1995 年就有工程师指出，在 1996 年发布 Copland 纯粹是幻想，能 1997 年发布就不错了。\n1996年，Gil Amelio 已经掌权。在苹果电脑全球研发者大会上他开心地宣布，传说中的 Copland，也就是 System 8 的开发版会在当年夏天发布，而正式版在秋天就可以送到每位用户手上。时任 TidBITs 编辑的 Matt Neuburg 有幸见到了这个传说中的系统。令他大吃一惊的是，这个系统在当时只能打开或关闭文件，而无法对文本文件进行编辑，甚至所有用户界面的文本框都不能输字。哪 怕什么都没做，整个系统也会随机崩溃，而崩溃甚至会造成文件系统损坏。参加演示的苹果员工，则需要不断守在旁边，他们的工作是不断地格式化已崩溃的计算机 磁盘，然后重装系统。那年夏天，第零个测试版送到一小簇不明真相的开发者手中，把那些脆弱的没见过世面的人吓得半死。就连 Apple 内部都开玩笑说 Copland 的正式发布日期可能得推迟到 2030 年。\nGil Amelio 心急如焚，希望 Copland 快点走到正道上来。作为 Gil Amelio 永远的好朋友，Ellen Hancock 就在这个乱糟糟的时候来到了 Apple。她的职务，正是担任这个乱糟糟项目的负责人。她亲自下访各小组体察民情，了解情况。毕竟在 IBM 干了近三十年，她依靠自己过人的判断力在 2~3 个月内便得出结论，Copland 这个项目是没有指望的，就按目前 Apple 这样的状态，Copland 永远都不可能发布，还不如早点取消了好。在短期内，先把 Copland 中的一些有用的成果一点点合并到老的 Mac OS 中，并且抓紧从外部购买一个全新系统来满足 Apple 的需要。正是她的这个结论，结束了 Apple 长达五年的纠结，使公司重新走向正轨。整个 PC 的黄金时代已经过去，Apple 想要翻身，还有很长一段路要走。Gil Amelio 支持了 Ellen Hancock 的计划。1996 年 8 月，Apple 取消 Copland 项目。开发预览版的 CD 封套都已制完，每个邮包上的地址都已打印就续，而 CD 却从未曾制出。\n1996-1998 年是 Apple 最混乱的几年。在商业上，有一阵曾传出 Apple 要被 Sun 收购的消息。更有意思的是，《连线》杂志在 1997 年的六月还发表了一篇文章，名为《101 种拯救 Apple 的方法》，其中一条说最好的方式是 Apple 让自己被 Motorola 买下，成为 Motorola 的一个部门，做 PowerPC 系列产品。以当时的眼光来看这些建议非常讽刺好笑，以今天的眼光看更为好笑。而 Ellen Hancock 在这段时间内的出色工作，成功地挽救了 Apple。\n首先，Ellen Hancock 的对内政策是继续 Mac OS 7.5 的开发工作，一步步把 Copland 中的技术并到 7.5 中。同时，也大量购买第三方的系统增强包，包括插件管理工具、层次化菜单等技术。Apple 把它们买过来，整合到现有的系统中。整个老系统在新系统尚未完成的时候不断更新，至 2000 年已出到 9.0 版，尽可能地留住了老用户。并且，前面提到的蓝盒（Blue Box）也作为后来新 Mac OS X 系统的一部分，支持用户运行经典 Mac OS 的程序。\n而对外政策更是一个大手笔。Ellen Hancock 协助 Gil Amelio 在 Apple 之外找寻操作系统技术。在 IBM 和 Microsoft 合作 Big Blue 的经验告诉她，购买一个操作系统的使用权问题多多，最好的计划是整个一并买下来。因此，Gil Amelio 开始和当时看好的 Be 谈，却因价格问题没有成功，最终转而收购了 NeXT。而 Apple 合并 NeXT 后，NeXTSTEP 就演化为 Rhapsody，并最终成为 Mac OS X。这些事情我们今后会详细再谈。\n买完 NeXT 后，Steve Jobs 执政，Gil Amelio 因任 CEO 期间 Apple 亏损严重而被炒。Steve Jobs 把信得过的人（很多是前 NeXT 员工）拉拢到周围，开始新政，而同 Gil Amelio 有关的 Ellen Hancock 则在人事变动中被疏远。Steve Jobs 甚至在很多场合称她为“笨蛋”。Ellen Hancock 最终于 1998 年主动辞职。事后同 Gil Amelio 以及 Apple 的创始人之一 Steve Wozniak 一同创业，但始终不景气，她的辉煌时代已经过去。\nGil Amelio 总结他在 Apple 时期的工作时说：“Apple 是一艘底部有洞漏水的船，而我的工作是把这船引向正道。”（Apple is like a ship with a hole in a bottom, leaking water, and my job is to get this ship pointed in the right direction. ）Ellen Hancock 虽然同 Gil Amelio 一样，不知如何去堵这个漏水的洞，但正是由于她在 Apple 的出色表现，不但把船引到了正道上，还找来了有能力堵这个洞的人。\nMac OS X 背后的故事（二）——Linus Torvalds的短视\n本文主要的故事来源是 Linus Torvalds 的自传《Just for Fun: The Story of an Accidental Revolutionary》。\nSteve Jobs 于 1997 年回归 Apple\nSteve Jobs对Mac OS X的考虑\n1997 年，Steve Jobs 回归，开发下一代操作系统的工作被提上日程。此刻的时代背景是像 Linux 这样的开源软件大行其道。随着网络的发展，使得像 Red Hat、VA Linux 之类的企业成为爆发户，把泡沫越吹越大。Steve Jobs 承认 Linux 的好处，甚至在若干年后介绍 Mac OS X 底层的 Darwin 时还不忘在幻灯片上写道：Darwin 是类似 Linux 的系统。而当时精明的 Steve Jobs 在考虑下面几个问题。\n第一，NeXTSTEP 的内核和外围工具中，BSD 代码维护起来需要大量人力，而且各分支的 BSD 发展显然不如 Linux 快。很多功能都没有，需要 Apple 自己做。\n第二，像 Apple 这样的小公司，需要借力打力。Apple 的主要竞争对手是 Microsoft，而开源软件的矛头也是 Microsoft，如果联合起来干革命，不但能让自己得到一个好名声（Apple 事后一直自称是最大的开源软件公司），也可以获得可观利益，从而对 Microsoft 造成压力。\n第三，也是最重要的，联合各开源组织能够推动 Mac OS 的发展。毕竟开源软件中像 GCC 之类都是很成熟的项目，Apple 用起来省时省力，投点钱就有大效益，多好。\n所以，把 Linux 内核作为 Mac OS X 的重要组成部分的想法被这位伟大的智者想了出来。Apple 之前也有开发 Linux 的经验，比如在 Steve Jobs 回归之前，Apple 就和 OSF 合作开始把 Mach 内核移植到 PowerPC 上（Apple 是最大的 PowerPC 玩家，而 OSF 是最大的 Mach 玩家），并把 Linux 作为服务跑在 Mach 上。这个系统就是 MkLinux，我们在后续的连载中还会提到这个系统，因为它不但对 Linux 的移植性作出了重要的贡献，也对后来的 Mac OS X 的 XNU 内核技术起到了相当重要的作用。\n如果可以采用 Linux 作为系统重要组成部分，并且这个构想能够取得在开源软件界呼风唤雨的 Linus Torvalds 的认同，就能靠他在社区鼓动一大群开发者皈依 Apple 麾下，这是 Apple 很想看到的给力结局。有了这个指导思想，他便让秘书给 Linux 的开发者 Linus Torvalds 发了一个邮件，问他是不是有一到两小时的时间和 Steve Jobs 会面。不明真相的 Linus Torvalds 收到邮件后相当高兴，因为这是他第一次有机会去硅谷观摩。\n无果而终的会面\nApple 总部 Infinity Loop 终于迎来了这位稀客，Steve Jobs 亲自接见，而先前任 NeXT 技术总监的 Avie Tevanian（这人的故事我们今后会提到）也参加了这次会谈。不用多说，这次讨论的内容自然是还处于未知状态的 Mac OS X。讨论算不上正式，但 Linus Torvalds 的愤青个性，却让谈判陷入僵局。\nSteve Jobs 自然搬出他 1997 年回归之际在 MacWorld 讲话时的那套理论，Apple 虽然很颓，但骨子里是个牛逼的公司。全世界桌面领域的真正玩家就两个，一个是 Apple，另一个是 Microsoft，两者加起来，构成百分之百的桌面用户群。所以，Linus 同学，你就从了我们吧，如果你从了我们，让我们把 Mac 架在 Linux 上，一大批桌面用户就是 Linux 用户啦，前景可是一片大好！\n而 Linus Torvalds 那时候牛啊，诸多大公司如 IBM、Red Hat 都围着他转。他可是企业家中的大红人，像 Apple 这样的企业根本就不在他眼里。作为一个开源软件的革命家，在他的想象中 Linux 的潜在用户应该比 Apple 还多。他始终相信，按照目前开源软件的发展态势，自己很快就能在桌面领域分到一杯羹。而且这个命题在他这种古怪性格下的直接推论是，即使我能占领桌面领 域，我也要摆出一副不在乎这个领域的态度来。所以实际上 Steve Jobs 的开场白一开始就失败了。\n接着，Avie Tevanian 向 Linus Torvalds 介绍了整个计划。他们想把 Mach 和 Linux 内核合并起来作为 Mac OS X 的基础，我估计 Linus Torvalds 是听错了（因为 Avie Tevanian 很早就意识到相比于微内核，混合内核有明显优势），他以为 Apple 想把 Linux 作为 Mach 的一个服务来跑（当然我个人认为，即使是合并 Mach 和 Linux 成为混合内核，依 Linus Torvalds 的愤青性格，依然是不可能接受的），这正让他回想到先前和 Tanenbaum 教授的笔战。并且，他也知道 Apple 和 IBM 合搞的失败项目 Taligent 正是用 Mach 的。\nLinus Torvalds 对于微内核有他自己的看法，之前也曾在不同的地方表述过。若把关于微内核的笔战去掉限制级敏感词的话可概括成两方面。一方面，设计一个微内核和相关的服 务，可能造成各种设计上的灾难。GNU/Hurd 早在八十年代末就考虑尝试在 Mach 上写一系列 Unix 的服务层，结果他们始终无法搞明白到底是让这些服务先发消息到另几个服务呢，还是考虑其他方案。所以直到 2011 年我写这篇文章时，Hurd 项目依然处于半死不活的状态。而另一方面，微内核的效率无法和传统内核相比，最简单的系统调用会涉及一系列底层服务的互相通信。所以很多研究者着手研究如 何把微内核的效率提上去，结果就导致微内核变得更加复杂。能提高微内核效率的很多研究成果都已在 Mach 项目中实现了。而在 Linus Torvalds 看来这恰使 Mach 成为了一个非常复杂的项目，并且效率也不怎么高。\n会谈时坐一旁的 Avie Tevanian 事实上是 Mach 最早的开发者之一，他热情地给 Linus 讲述 Mac OS X 系统蓝图。而 Linus 实际上早就不耐烦了。比如，Mac OS X 中，有一个模拟层，可让用户使用经典的 Mac OS 程序。这个技术极类似于现在跑在 Unix 系统上执行 Windows 程序的 Wine 。Apple 当时的考虑是这样，因为老的 Mac OS 在设计 API 时，就没有考虑到类似内存保护之类的问题，所以这层 API 必须废掉，Mac OS X 中所有的新程序必须采用 NeXT 的那套更先进的 API（根据我的考证，当时还没有 Carbon 这样的想法，而且事实上 Carbon 不管在 API 还是 ABI 上都和经典 Mac OS 不兼容）。而短期内已有的软件又不可能快速重写迁移至 Mac OS X。所以，如果用户需要使用老版 Mac OS 的第三方应用程序，就可以使用 Apple 提供的这个兼容层。但是由于刚才提到的原因，老版程序并不享受新版程序的待遇，因为模拟器本身运行多个老 Mac OS 任务时，和原先老版 Mac OS 一样，实际上只有一个进程，没有内存保护。这样做的好处是明显的，因为一方面老的程序在 Mac OS X 发布之初还能用，另一方面 Apple 又和老技术划清了界限，逼着开发者使用新技术，技术方面的原因是最重要的。但这个看似很正确的技术在 Linus Torvalds 看来是古怪的，他想当然地认为，完全可以运行多个不同的模拟器进程，来执行不同的任务，使得每个任务都可以享受内存保护。这种浪漫主义情调让他无比鄙视 Apple 员工的智商。而事后当笔者使用早期版本的 Mac OS X 时，发现 Linus Torvalds 的想法完全是不切实际的。因为这个模拟层本来就要占用不少的内存和 CPU，在处理器速度不及今日手机、内存无比精贵的 90 年代末，跑一堆模拟器进程无异于是和自己过不去。\nSteve Jobs 考虑到 Linus Torvalds 是开源软件的领军人物，便继续以开源为话题，动之以情，晓之以理。他告诉 Linus Torvalds，我们这个系统做出来后呢，所有的 Unix 层（非图形界面层），都会开源，所以事实上你加入我们，也是在给开源做贡献啊！而由于在开源圈子混久了，Linus Torvalds 对此丝亳不领情，他认为，有谁会想用一个底层是开源而图形界面是不开源的系统呢？所以，像笔者这样的用户被“代表”了。\nMac OS X 与 Linux 分道扬镳\n总之，这次会面完全谈崩，两人站在不同的角度去看问题，加上 Steve Jobs 和 Linus Torvalds 都是个性鲜明、唯我独尊的人，技术和商业上的考虑都不同，所以会谈中双方简直就是鸡同鸭讲。这次讨论也使得 Apple 放弃 Linux，转而采用 FreeBSD 技术，并在 2001 年任命 FreeBSD 的发起者、领军人物 Jordan Hubbard 为 BSD 技术小组的经理，并在后来升为 Unix 技术总监。至于 Apple 的内核技术后来走向何方，我们下期再讲。\n笔者认为，Apple 和 Linus Torvarlds 的商谈破裂，以今天的眼光来看，是因 Linus Torvarlds 的自命清高和短视造成的。他不懂得尊重其他开发者的意见，并且不断抬扛。包括后来关于 C++ 的论战。Mac OS X 发布后，Linus Torvalds 又数次嘲笑 Mac 的技术落后，并说这些他在当年和 Steve Jobs 开会时就预料到了。直到最近，他终于有些成熟，对 Mac OS X 的观点开始缓合，但还是不忘批评 Mac 的文件系统就是垃圾（事实上，Linux 的也没好到哪去，至少 Apple 还搞过一阵 ZFS）。这种性格最终导致在 Mac OS X 和 iOS 大行其道的时候，Linus Torvalds 连兔子汤都不曾分到。\n而事实上这对 Apple 也是件好事。Apple 重要的是利益而不是折腾，即使是开源也是利益驱动。像类似 Linux 开发组那样自以为是但代码又写得差的开源项目，Apple 事后也遇到不少，比如 GCC 编译器项目组。虽然大把钞票扔进去，在先期能够解决一些问题，但时间长了这群人总和 Apple 过不去，并以自己在开源世界的地位恫吓之，最终 Apple 由于受不了这些项目组人员的态度、协议、代码质量，觉得还不如自己造轮子来得方便，因此 Apple 推动了类似 LLVM 这样宏伟的项目，并且在短短几年内，使其成为最领先的开源软件技术。这无异于扇了 Linux 小组、GCC 小组一记响亮的耳光。\nMac OS X 背后的故事（三）Mach 之父 Avie Tevanian\n1975 年，美国罗彻斯特大学纽约分校，一组研究员正在做一个名为 RIG（Rochester’s Intelligent Gateway）的项目，它由 Jerry Feldman 主持设计。RIG 的目标是给所有本地以及远端的计算设备（比如磁盘、列印机、磁带、绘图机等）提供一组统一的访问方式，其作业系统称为 Aleph。为了实现所需要的功能，Aleph 的内核主要构建了一个进程交互（Interprocess Communication，IPC）的机制。RIG 的各进程，只要设置了目标端口，就可以彼此间发送信息。RIG 项目没过几年就被判了死刑，主要是缺少很多有用的功能，比如端口没有保护机制，一次最多只能发送 2KB 大小的信息（受硬件限制），也没有很好的网络支持等。不过在 20 世纪 70 年代，这个系统依然代表着当时作业系统设计的先进水平，比如除了进程交互外，每个进程还有内存保护的功能，这足以让 20 世纪 90 年代末都没有做出内存保护技术的 Apple 公司汗颜。\n该项目后来失败了，随后在 1979 年，RIG 的 Richard Rashid 博士毕业到卡内基-梅隆大学当教授，开始做 Accent 项目。它是一个网络作业系统，于 1981 年 4 月开始活跃开发。受 RIG 的影响，Accent 系统的亮点也在于可以使用 IPC，而且解决了很多 RIG 的不足。比如每个进程有 4GB 的虚拟内存空间，而且甚至连内核自已都可以被存入缓存页面，内存有先进的更新前拷贝（Copy-on-Write）功能，可以实现进程间大信息的传送等。 读者可以把 Accent 理解为支持虚拟内存技术，并且具有网络透明 IPC 功能的 RIG 内核。\n但过了几年，开发者们越来越对 Accent 失去兴趣。在 1980 年初，很多人觉得多核计算是计算机未来发展的潮流，但 Accent 内核在设计时并没有考虑到这些问题。而且，随着许多实验室纷纷购置性能更强劲的计算机，这就意味着 Accent 需要移植到新的目标架构上。此外，Unix 正大行其道，不管是在作业系统理论上还是在用户程序上，都成为最为流行的作业系统模式，而 Accent 并不是一个 Unix 系统，所以无法享受 Unix 世界的诸多美好。为了解决这个问题，研究人员决定把所有设计推翻重来，于是就有了一个全新的系统。\n在匹兹堡的一个雨天，卡内基-梅隆大学的 Avie Tevanian，此系统的最主要开发者，正打着伞和同学们在去吃午饭的路上。他们一边绕着无数的泥塘，一边构思给这个新系统取什么名字好。灵感突来， Avadis Tevanian 建议把这个系统叫作 Muck，引得同学们哈哈大笑。后来，Richard Rashid 和一位意大利同事 Dario Giuse 说起这玩笑，结果这位同事不经意地把 Muck 发为 Mach，遂把 Richard Rashid 笑翻，伟大的 Mach 系统因此得名。\nMach 是一个受 Accent 启发而搞出的Unix兼容系统。那年，Unix 已经十六岁，而且依然是作业系统理论与实践开发的主要阵地。Unix 内核由于新加入的功能越来越多，变得越来越复杂。而 Mach 的一个主要目标就是尽量缩减 Unix 的各项服务，以使内核变得简单可维护。此项目从 1984 年开始，目标主要是包含完整的多任务支援、良好的硬件移植性，并要把大量服务移出内核作为跑在内核上的服务，以及提供与 Unix 的兼容性。\nMach 使用纯 C 编写，所以在一定程度上保证了可移植性，这事实上为后面的 NeXT 向 PowerPC 移植以及 2005 年的向 Intel 移植提供了很重要的前提。而为了缩减内核该管的任务，Mach 做得很绝，只提供内存和处理器管理。类似于档案系统、网络、输入输出等功能都作为单个的系统进程，独立执行于内核之上。Mach 的开发过程以 4.3 BSD 作为起点，以 RIG 的 Accent 作为参考，采纳 DEC 的虚拟内存设计思路，逐步开发，以新写的代码代替 BSD 的代码。两年后的 1986 年，虽然没能把系统服务完全分离于内核之外，但已颇见成效。Mach 第一版大功告成，组员发表会议论文，成为操作系统史上里程碑式的经典，引发操作系统业界的“微内核”学潮，如今学习作业系统设计的皆需学习此文，二十五年 来被引用一千二百余次。\n这篇文章主要讲了两方面内容：IPC 和虚拟内存。在 IPC 方面，Mach 把复杂的消息传送机制分为四个独立的清晰概念—任务、线程、端口、信息。任务是拥有一组系统资源的对象，允许线程在其中执行；线程是执行的基本单位，拥有 一个任务的上下文，并且共享任务中的资源。\n由于该论文的影响力，所以项目得到了 OSF（Open Software Foundation）在内的很多投资。当然了，学术和工程永远存在差距，所以即使是最受欢迎的 Mach 2.5 其实仍然是一个包括大多数 BSD 服务层的单内核。但包括 NeXTSTEP、OSF/1 在内的很多操作系统都采用 Mach 作为其内核技术，原因是广大研究人员依然相信微内核代表着未来。虽然 Mach 2.5 的效率比传统的 Unix 系统稍低一些，但研究者们表示情绪淡定，因为 Mach 支持多处理器系统，可以利用多线程把任务处理得飞快，相比之下其他 Unix 内核并没有多处理器的完善支援，因此 Mach 效率稍低完全可以接受。但随着真正把 Mach 和 BSD 服务完全脱离的 Mach 3 微内核面世，研究人员们的情绪就再也淡定不起来了。因为服务和内核分离后，任务间的 IPC 数量暴涨，一个简单的 Unix 系统调用要涉及到十多个开端口、设权限、发送、收取消息的操作，哪怕是使用数年后的 1997 年的硬件，跑一个系统调用密集的程序，Mach 的效率要比一般的 Unix 系统慢 50%，而且根本没有什么好方法来解决这个问题。\n所以 Mach 3 出来后，虽有少数微内核信徒继续执著地改进 Mach，或者开始其他微内核比如 L4 的研究。但学术界对 Mach 的兴趣大减，因而 Mach 3 也成为最后一版。项目解散后，Richard Rashid 去了微软研究院。\n再说我们的主角 Avie Tevanian，他 1987 年博士毕业去了 NeXT。这家公司刚刚由 Steve Jobs 成立两年，这两年 Steve Jobs 啥正经事都没干，只是花了十万美元雇 Paul Rand 设计了一个公司商标。直到 Avie Tevanian 加入后，这个公司才开始干实事。1987 年公司确认要开发一个面向研究人员使用的计算机工作站，于是软硬件的开发工作紧锣密鼓地展开。硬件组由领导过 Apple Lisa 的 Rich Page 原班人马负责，而软件则由 Avie Tevanian 负责，计划开发一个有图形界面的操作系统 NeXTSTEP。由于 Avie Tevanian 是 Mach 主要的开发者，自然 NeXTSTEP 就基于 Mach 了。1988 年 10 月 12 日，NeXT 发布预览版（0.8版），并于 1989 年 9 月 18 日发布 1.0 版（注：NeXTSTEP）。\n作为 NeXTSTEP 系统的内核，NeXT 分支的 Mach 经历了不少变化。NeXTSTEP 0.8 主要使用 Mach 2.0 版，而稍后的 NeXTSTEP 1.0 版主要基于 Mach 2.5 版，包含一个自己定制的当时最新的 4.3 BSD 服务层。从 3.1 版开始，NeXT 分支的 Mach 还包括一个全新的设备驱动框架， 名为 Driver Kit，仅供 x86 系列的硬件使用。和 Mach 以及 BSD 代码不同，Driver Kit 是使用 Objective-C 写的。为什么是一个面向对象的语言呢？看 NeXTSTEP 3.3 的 DriverKit 文档。读者大概就会发现，NeXTSTEP 把所有硬件设备理解为对象，而我们知道，对象之间有继承关系，比如，磁盘（IODisk物件）属于输入输出设备（IODevice物件）的子物件，而磁盘 （IODisk）本身又是逻辑磁盘（IOLogicalDisk）的父物件。硬件的初始化对应于每个物件的初始化（init方法），硬件又有读、写，所以 可以用 getter/setter 的方法。因此，DriverKit 是一个非常有特色的实现。而且由于 Objective-C 的效率很高，依赖很少（Objective-C 程序可以直接被编译器翻译成等价的C语言程序并编译，而 Objective-C 的运行库 libobjc 也以高效著称），所以也是编写驱动的良好选择。几年后的 IOKit 其实就是个 DriverKit 的翻版。\n这时，NeXTSTEP 操作系统大获成功，风险投资商们纷纷购买，但硬件却始终卖不出去（注：Aaron Hillegass《Cocoa Programming for Mac OS X》前言），所以 NeXT 砍掉了硬件部门专做软件，更是使 NeXTSTEP 发展到了巅峰时期，同时支持 68K、x86、PA-RISC 和 SPARC 等硬件，但颇有意味的是它就是不支持 PowerPC 架构。它可以同时产生一个包含所有架构可执行码的二进制文件，来使开发的程序在所有平台上执行。这个功能也影响了后来 Mac OS X 的技术。Mac OS X 10.4 时代有两件跨时代意义的事情，一件是 Apple 搞出了 64 位的 Power Mac，开发者可以发布一个包含64位和32位程序的单一可执行文件，而无需让用户去区分；另一件是和 Intel 合作。Apple 正式发表了 Universal Binary 技术，可以一个 Mach-O 文件同时包含 Intel 和 PowerPC 的指令。这非常贴心的设计（要知道，大多数电脑用户根本不知道 Intel、PowerPC、64位、32位等技术）就是来自于 Mach 的技术。\nNeXTSTEP 3.3 后，NeXTSTEP 因为 NeXT 和 Sun 的合作改名为 OPENSTEP，1996 年发布 4.0 版，到 1997 年 2 月 4 日，NeXT 被 Apple 收购之前，期间内核改进除源码同步到 Mach 3.0 版外不明，而且出于不知道的原因，我手头的 OPENSTEP 正式版光盘中，居然找不到 DriverKit 的发布说明和编程文档，故不作详述。不过这段时间，Apple 的活动值得好好一说。之前在《Linus Torvalds的短视》中，我们曾提到，1996 年，Apple 和 OSF 曾经合作，把 Mach 移到 PowerPC Mac 上，再把 Linux 作为单一的服务跑在 Mach 上，这个项目叫做 MkLinux。在 1996 年发布基于 Mach 3.0 和 Linux 1.3 的预览版，并更新到 2002 年结束其历史使命，对 Mach 在 PowerPC 的移植性上做出了重要贡献。这个 PowerPC 版的 Mach 被叫作 osfmk 分支，也正是现在 Mac OS X 中用的分支。当然了，NeXT 被合并后做了大量修改。\nApple 收购 NeXT 后，Mach 被确定作为未来的操作系统核心。Avie Tevanian 被选为软件开发部的总裁。合并所有项目的号角吹响后，上层的 OpenStep API 和老版 Mac OS 的部件开始合并，而 Mach 也经历重大变化。主要是一方面，Mach 使用了 osfmk 分支，但依然包含 4.3 BSD 服务；另一方面，DriverKit 被 IOKit 取代。这是 Apple 走得很被动的一步。因为当时外界普遍对 Objective-C 不看好，逼着 Apple 走老版 Mac OS API 的老路。而 Apple 自己对 Objective-C 也很不自信，甚至想索性换用 Java 了事（我们以后会谈及这段不自信的历史）。所以 IOKit 是一个 C++ 的驱动架构，来符合大众口味。这些改变最早在 Rhapsody 中出现（我们以后也会有一期 Rhapsody 的专题）。但由于 C++ 是门很恐怖的语言，所以 Apple 又把 C++ 给阉割了，去掉了多重继承、模板、运行时动态以及异常，让开发者使用这种对于 Objective-C 来说换汤不换药的 Clean C++ 来做驱动。但公正地说，IOKit 对于 Driver Kit 是有不少改进的，比如 IOKit 可以写在用户空间跑的驱动（虽然大多仍是跑在内核空间上的），因而驱动挂了而系统不会挂。另外 IOKit 考虑到了计算机发展的趋势，所以在电源管理、即插即用、动态加载上做得更好。\n但各位也知道，C++ 程序得用专门的运行库才能跑，所以 Mach 中又加入了一个叫作 libkern 的库负责 C++ 相关的功能，同时，还有一个 libsa 的库提供一些类似二分查找、排序等基本算法之类的功能。最后和硬件相关的还有一个叫作 pexpert（Platform Expert）的库，负责收集硬件设备列表、检测机器种类（比如处理器速度等）、解析启动参数等杂活。\n至此，Mac OS X 的内核完全形成，形成 BSD、IOKit、Mach osfmk 三足鼎立的态势，并有 pexpert、libkern、libsa 作为基础。Apple 称它的内核杰作为 XNU。其代码开源，请读者移步Source Browser，每个部 分的代码都独立存放在一个文件夹中，条理清晰，不妨一读。\n由于 4.3 BSD 已是过眼烟云，Apple 后来投入大量资源扶持 FreeBSD 开发。2001 年，Apple 将 FreeBSD 的发起者、领军人物 Jordan Hubbard 收入麾下，并在 Mac OS X 10.3 时基本同步到 FreeBSD 5 的代码（注：XNU: The Kernel）。\n另外，Apple 的开发也同时反馈到 FreeBSD 小组，包括 FreeBSD 6.2 内核引入的 AUDIT (man audit 或参见http://manpages.unixforum.co.uk/man-pages/unix/freebsd-6.2/4/audit-man-page.html)，后来 FreeBSD 8引入的 libdispatch （GCD - FreeBSD Wiki, 在 Apple 这项技术叫 Grand Central Dispatch，是 Mac OS X 10.6 主推的新功能，FreeBSD 基本在 Mac OS X 10.6 上市的同时就拥有这项最新技术），以及 FreeBSD-CURRENT 中的 LLVM-Clang，全是 Apple 的手笔。从 1999 年开始，FreeBSD 源码仓库可以搜索到 Apple 提供的大量的补丁以及新功能。\nMac OS X 早期版本不太稳定，所以会内核崩溃。10.0 版本会直接像 Linux 或者 BSD 那样打出回溯信息，很不美观，所以 Apple 在 10.2 版本开始设计了一个多国语言的图片告诉用户你的内核崩溃了，以让内核崩得看起来更优雅一点。由于包含四国语言，被国内用户戏称为“四国”（注：优雅的图片 见下图，详见 OS X: About kernel panics），这是 XNU 的 Mach osfmk 部分的功能。但从 10.3~10.4 版本开始，系统越发稳定，正常使用已很少见到内核崩溃。而且，内核提供的服务也越来越多，使得 Mac OS X 成为一个完善的系统。\n21 世纪 XNU 架构方面的最重大改动是支持了 PPC64（10.4 版本时代）、x86 架构（其实本来也一直支持的，以后讲 Apple 的 Intel 迁移时详谈）、x86_64（64位支持是苹果长年努力逐步展开的。10.4 时代 32 位内核支持载入 64 位的用户程序，10.5 系统提供 64 位的Cocoa框架，但系统大部分程序都是 32 位的，10.6 时代内核支持以 64 位模式启动，但在不少硬件上这是非默认的方式，但系统大量程序已被改写并编译为 64 位的二进制程序，10.7 时代内核默认以 64 位模式启动。）和 ARM 架构（iPhone 和 iPad 使用 XNU 内核）等多个新架构。\n而其中 ARM 架构的支持别具意义。但 2006 年 5 月 31 日，功成名就的 Avie Tevanian 离开 Apple 另谋发展，此时，离 Apple 的 iPhone 奇迹发生，只有不到一年时间。\nMac OS X 背后的故事（四）—— 政客的跨界\n2000 年，美国总统大选，由于选票设计问题，时任美国副总统的 Al Gore 败北。2000 年 12 月 13 日，在一番重新计票的大折腾不起作用后，曾经意气风发的 Al Gore 拖着疲惫的身子，走上讲台，发表了认输讲话（参见 Al Gore《2000 Presidential Concession Speech》），从此退出政坛。一般国家领导人的退政生活其往往松愉快，出出日记，学用哲学，或者像多才多艺的李岚清不但去各地推广古典音乐，更是玩起 了篆刻（参见《南方周末》2006 年 5 月 11 日《老常委的卸任生活》），克林顿先生都成立个基金会来帮助社会预防和治疗爱滋。 Al Gore 也没闲着，他找到了让他感兴趣的去处——Apple 总部，并成为董事之一。\nMac OS X 和 Al Gore 的双赢\n2003 年 5 月 19 日，Apple 的启示中罕见性地登出了《前总统 Al Gore 加入 Apple 董事会》的快讯。文中提到，Al Gore 总统是一个正宗果粉，他一直用 Mac 计算机，而且还会用 Final Cut Pro 来编辑他的视频。Al Gore 也不掩饰他对 Apple 技术的热爱，他表示对 Mac OS X 的开发极感兴趣，并且也对 Apple 在开放源代码运动中的贡献喜闻乐见。他虚心地说，想在这个让 Apple 起死回生的董事会好好观摩并学习。\nAl Gore 的加盟让 Apple 一跃成为电子产品的代言人\n苹果公司的 CEO Steve Jobs 表示 Al Gore 曾经管理过世界最大的组织——美国政府，期间显示出的经验和智慧对苹果公司是笔巨大的财富。Al Gore 将成为出色的董事会主席，苹果将以他把苹果公司作为职业生涯的开始为荣。\n这之后，Al Gore 在 Apple 内部的决策究竟起了什么作用，和 Mac OS X 的开发有何关联，在正式的渠道很少有史料，但是他后来的各种公开活动，却给 Mac OS X 的技术做足了广告，而且很多证据表明，他正是使 Apple 从被绿色人士攻击的众矢之的的状态，成为业界注重电子产品环保领头羊的主要推手。\nAl Gore 重新进入普通人的视野是在 2006 年，他推出了自己参与制作和演出的纪录片《An Inconvenient Truth》（《难以忽视的真相》）和同名书籍。这部长达 94 分钟的影片，在西方国家引起了广大的回响，以 Al Gore 的一场演讲和人生的回忆作为两条主线，详细、科普地向民众介绍了全球变暖问题的科学证据及美国政府掩盖问题的真相。该片以发人深省的立意、详尽的科学数 据、平实的讲演风格，加上苹果高超的技术，而获得了广泛的好评并一举获得年度奥斯卡最佳纪录片奖，使得这位美国前副总统摇身一变，成为好莱坞明星。\n为什么单单一场简单的讲话，就能做出一部电影，还能得到奥斯卡这样学院艺术奖的亲睐？是因为讲话内容无懈可击 么？事后有很多科学家站出来表示，虽然影片内容有积极的意义，但其实也有很多被夸大的科学数据、假设和结论。试思索，该片之所以成功，甚至成为诸多演讲培 训机构的重要分析案例，除了数据、观点、论述外，还有以下几个原因。\n首先，这场演讲由苹果主导的技术和艺术的设计。Al Gore 向来以说不清想表达的内容而著称。他经常因为讲得过于专业或者缺乏好的表述方法以致于民众完全不懂他在讲些什么。他的早期讲话用现在的眼光看就是个少将 体，比如“互联网…网…我…这个…那个…那个…怎么说呢…我想这个…这…这…这…我啊…我啊…就是说…互联网是我发明的！”因此作为苹果展现公司软实力的 重要机会，苹果非常重视这场讲话，请公司的图形设计小组带领完成各种所需设计，苹果甚至特地请来了专业的设计公司 Duarte 来进行讲稿和讲话内容的安排。因此，不管是内容安排、图形设计还是技术支持，Al Gore 都有强有力的后盾，他们能够帮助Al Gore 完成任何想达到的目标。不论是 FinalCut 还是 Keynote，一旦缺少任何 Al Gore 想要的功能，Apple 都可以给他开小灶实现。在片末的走马灯字幕中，有大量 Apple 的 Keynote 组、Final Cut 组和图形设计组的员工名字，以示鸣谢。\n其次，上面这些资源的相互合作，也使得 Al Gore 的这场讲话的讲稿被精心制作，体现了精心设计的电子稿演讲所能达到的最高成就。苹果公司向来重视演讲，也是各大企业中最会通过演讲来营销产品的公司。每年 的 MacWorld 和 WWDC 的 Steve Jobs 讲话都会吸引百万人在计算机前观看。每场讲话都好戏连连，台下的观众的欢呼和掌声不亚于著名歌星的演唱会。这种风格显然给 Al Gore 的讲话风格带来很大的影响。在影片中，观众看不到一个传统的 bulletpoint（PowerPoint 用户常爱使用的表示讲话结构的方法），取而代之的是高清的照片、视频，来展现环境的严峻性。观众不再会为枯燥无味的技术词语而搞得昏昏欲睡，因为屏幕上的 一切都是如此真实，各种科学现象由动画效果配合，使其浅显易懂。另外，所有的数据、图表都精心使用软件制作，使其一目了然，表现准确而美观大方，而且 Al Gore 时而还会玩些小噱头，比如讲到现在的温室气体浓度是多么高时，他甚至爬上工作人员为他准备的升降机，升到舞台顶端，来告诉观众，数据已经突破图表的顶端 了。现在距笔者观赏完这部影片，已经五年过去了，但影片中的灾难场景、冰川融化的影片段落、海平面上升的计算机模拟、二氧化碳浓度的数据图表，至今都记得 一清二楚，足以见得其表现力是何等深入人心。甚至有人在调侃他在 2000 年的竞选演说是怎么回事？难道就是缺少了这些科技元素？\n最后，Mac OS X 的各项技术也是这部片子的重要保证。Duarte 公司的 Ted Boda 表示（该幻灯片的设计师之一），Mac OS X 系统本身的反锯齿功能把文字、图片、矢量图标表现得栩栩如生，使得幻灯片充满美感。QuickTime 技术作为 Mac OS X 的一块重要基石，又使得 Keynote 不需任何插件就能引入任何图片和影像，所以类似使用 Illustrator、Photoshop、AfterEffects 等软件做出的图片、影像或动昼，不需要任何转换过程就能直接拖到 Keynote 中。哪怕 1920×1080 的高清视频，都可以轻松插入，流畅播放。他们组根本想象不出在 Windows上 使用 PowerPoint 会成什么样子。\n可以说，没有 Mac OS X，就没有这部电影。而实际上这部电影的作用远胜过任何一部 Apple 公司的广告。片中 Al Gore 时时拿着 PowerBook 的笔记本，在办公室用 Safari 查网页，字体渲染真实而美观，甚至在车上都不忘打开笔记本用 Keynote 做几张幻灯片，就更不用说电影中 Keynote 幻灯片曾经迷倒多少 Windows 用户了。向笔者推荐这部电影的好朋友了解到这些全是 Apple 技术的功劳时，拥有一台 Mac 就成为其人生梦想。\n环保卫士的 Apple 之路\n作为环保人士，Al Gore 对 Apple 的策略的影响也不容忽视。Apple 向来被各环保组织长期批评，即使 Apple 长年不断地改进这方面问题，但绿色人士依然不买帐。哪怕在稍后的 2007 年，也仍有包括 GreenPeace 在内的七十多个组织联名写信给 Al Gore，敦促 Apple 更重视环境问题，信中指责 Apple 仍在大量使用 PVC 和 BFRs 等对环境有害的材料，也不注重对自家产品的回收。由于 Al Gore 是 Apple 董事会成员，使得这个问题受到了 Apple 的广泛关注。Apple 在 2007 年后史无前例地迈开大步，大力推广环保计划（要求全世界的 IT 制造商们逐步弃用 PVC 等有毒的化学用品进行生产），让 Apple 一跃成为注重电子产品环境保护问题的领头羊。\n从制造材料上，2007 年 8 月发布的 iMac 成为分水岭。这款产品的设计主要使用可完全被回收的玻璃屏和铝外框，减小了塑料等不环保物质的使用，此后苹果一发不可收拾，把这项革命进行到底，从手机到 笔记本，都全番设计。2008 年的 MacBook Air 引出的 Unibody 技术是这场革命的代表产品，不但在外观上还是工程上做到极致，在环保上更是让各绿色组织无可挑剔。\n在造势上，Apple 现在每项主要产品的都有“环境”的标签页，从制造、运输、耗电、回收等性能情况分产品详细列出。Apple 甚至在包装上都动足脑筋，尽量减少每个产品的包装，使得同一架飞机可以运输更多的产品，从而在运输相同数量产品的情况下减少飞机温室气体的总排放量。\nMac OS X 的各项节电功能的开发更是不用说了。休眠、调整空闲时的屏幕亮度、硬盘转速等常规功能自然越做越好。而系统的多项技术能使程序更优地分配使用中央处理器和 显示卡。甚至系统还能在用户打字时，每两键之间的空隙减少处理器的占用从而节省击键之间的功耗，这使得 Mac OS X 不但更节约能源，笔记本的电池使用时间也不断提高。而这一切的变化，和 Al Gore 似乎都有着千丝万缕的联系。\n由于《An Inconvenient Truth》中的讲话让 Al Gore 的观点深入人心，同时也对美国政府在京都议定的决策产生重大的压力，挪威诺贝尔委员会决定把 2007 年的诺贝尔和平奖颁给了 Al Gore，以表彰其在全球环境问题方面的努力，同时苹果的主页上全版刊发新闻，以示祝贺。贺词如下：\nAl has put his heart and soul, and much of his life during the past several years, into alerting and educating us all on the climate crisis. We are bursting with pride for Al and this historic recognition of his global contributions. (Al Gore 在过去几年殚心积虑，全身心地投入对公众关于气候危机的警示和教育中。我们为他这次所得的荣誉和他全球性贡献的历史性承认感到无比自豪。）\n或许，由于 Al Gore 在计算机领域的一贯低调（他也是 Google 的高级顾问），他在这些企业的工作很少被报道出来，但是他在政界的跨界身份是显而易见的。Al Gore 在他的人生道路将何去何从，我们不得而知，但是从各种媒体信息的披露可以看出，Al Gore 对计算机事业的热衷，对环保问题的投入，可能是美国历任领导人中最突出的。\n",
+  "wordCount" : "1924",
+  "inLanguage": "en",
+  "datePublished": "2022-10-22T00:00:00Z",
+  "dateModified": "2022-10-22T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/mac-os-x-%E8%83%8C%E5%90%8E%E7%9A%84%E6%95%85%E4%BA%8B/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "bimizx'blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="" accesskey="h" title="bimizx&#39;blog (Alt + H)">bimizx&#39;blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="archives" title="外链">
+                    <span>外链</span>
+                </a>
+            </li>
+            <li>
+                <a href="archives" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Mac OS X 背后的故事
+    </h1>
+    <div class="post-meta"><span title='2022-10-22 00:00:00 +0000 UTC'>October 22, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Mac OS X 背后的故事（一）力挽狂澜的 Ellen Hancock</p>
+<p>故事还得从 20 世纪 90 年代说起。Ellen Hancock 是本文的主人公，也是一位女英雄。她因在 IBM 的经历而被人们所熟悉。1966-1995 年间，Ellen Hancock 在 IBM 共工作了 29 年。1985 年，她成为 IBM 的副主席。在 1986-1988 年间，Ellen Hancock 担任过 IBM 通信产品的主席，并在 1992 年被选为资深副总裁。1995 年 9 月，她被时任美国国家半导体（National Semiconductor）CEO的 Gil Amelio 忽悠，跳槽来到这个企业，做执行副总裁。她在这里带领团队完成了 CompactRISC 架构，这个架构事后成为 ARM7 系列的前身。很多人早已经把她忘了，也很少有人能够在回忆时将她和 Mac OS X 联系起来。但事实上，她是让苹果放弃 Copland 转而购买 NeXT 的关键人物。</p>
+<p>早在 1994 年，Gil Amelio 就找好了下家 Apple，成为 Apple 董事会的成员。1997 年 2 月，Gil Amelio 从 National Semiconductor 辞职，并成为 Apple 的 CEO。为了紧跟老板的召唤，Ellen Hancock 再次被忽悠，来到了当时危机四伏的 Apple。这时是 1996 年 5 月，为什么是危机四伏呢？还得从早先的事情说起。</p>
+<p>20 世纪 80 年代，卖可乐的 John Sculley 成为 Apple 的 CEO，随之 Steve Jobs 被轰出Apple。毕竟可乐和计算机不是一回事，因此不管是硬件还是 Mac OS，整个公司的开发项目越来越受阻。而且由于先天的不足，Mac OS 从诞生之初就不具有一个现代操作系统所应有的特性。所以，在 1987 年，开发下一代操作系统的计划呼之欲出。具体的规划是，把新的系统所需要的功能，写在一堆卡片上。短期可实现的目标，比如增加颜色支持（当时计算机仍是黑 白的），写在蓝色的卡片上；长期的目标，比如多任务功能，写在粉色的卡片上；而在可预见的未来都无法实现的长期的目标，比如加一个纯物件导向的文件系统， 就写在红色的卡片上。在这样的思路下，Mac OS 的开发团队马上就被分成两个组，一个叫蓝组，目标是在 1991 年，发布一个关于 Mac OS 的更新版本；另一个叫粉组，和蓝组同时工作，计划在 1993 年，发布一个全新的操作系统。</p>
+<p>1991 年 5 月 13 日，蓝组顺利按时完成开发任务，发布了 Mac OS 7（一般被称为 System 7），而粉组却没做出什么有实际用途的东西来，因此接连跳票。而且，由于 Mac OS 7 的发布缺乏人手，为了保持正常发布，常常需要从粉组抽调人员参加蓝组的开发，再加上 Apple 当时把重心放在了和 IBM 等公司的合作上（Taligent 项目）而不是在粉组上，最终导致了粉组项目夭折。而本来 Apple 指望和 IBM 合作的Taligent 项目能开发出一个可用的新系统，但后来 IBM 不跟 Apple 继续玩了，因而 Taligent 的果子又吃不到，Apple 相当郁闷。这时由于 Mac OS 有先天不足（单任务，没有内存保护），再加上 Apple 以及第三方软件的无限量增加（在这段时期，单 Apple 自己就已经加入了 QuickDraw、PowerTalk、QuickTime 等软件和技术，每一个都比 Mac OS 本身来得大），Mac OS 的问题终于大爆发。上个世纪 90 年代，Mac OS 给人的印象就是很不稳定、经常崩溃，同 Windows 95 留给 PC 用户的印象差不多，甚至更甚。</p>
+<p>Taligent 项目挂掉后，Apple 自己尝试过十多个不同的内部项目，但大多没做多久就夭折了。而这时正是 Windows NT 走向成熟的关键时期。眼看着日子逐渐变得不好过了，Apple 开始重新开始考虑建立下一代操作系统的事情。1994年，Mac OS 7.5（Mozart）发布后，Apple 推出新规划，建立一个全新的操作系统，以 Copland 命名（纪念 Aaron Copland，Mac OS 的发布以音乐家名字命名，和 Mac OS X 后使用猫科动物名字很不一样），这个项目将有一个全新的内核，具有类似 Windows NT 内核的所有高级特性，而老的软件都当作独立的进程模拟运行。这个项目时间紧、任务重，1995 年 3 月公布计划，预期 1996 年发布。而 Copland 后的版本 Gershwin（纪念 George Gershwin），预计 1997 年发布，将重写 Mac 的所有系统主要部件，以适合新内核的各种特性。</p>
+<p>Copland 将使用微内核技术，只做任务和内存分配。除此之外的所有功能，比如文件系统、硬件驱动等作为微内核上的服务运行。而 Mac OS 的所有用户界面功能将成为一个独立的框架，称为蓝盒（Blue Box，今后介绍 Mac OS X 时，我们还会遇到这个词）。所有的任务相互独立，占用独立内存，也可以用 IPC 相互交流。学过操作系统的人都知道，微内核是当时的一个热词，一个系统只有被称为微内核才可被看作是先进的，当时还有针对 Linux 系统的著名的 Tanenbaum-Torvalds 笔战。但事实证明，所有本来想做成微内核系统的成功项目都放弃了原先的设计（包括 NeXTSTEP、Windows NT），因为这种类似 Mach 微内核的系统往往难产，GNU/Mach + Hurd 之类的项目做到现在经过了20年，仍未成事，一年内搞一个微内核系统谈何容易。</p>
+<p>微内核还没搞成，Apple 几乎所有开发组的成员都来添乱。大家都说自己做的东西很重要，一定要加入 Copland 开发组，所以 QuickDraw GX、OpenDoc 之类的开发组产品成为新系统的核心组件，甚至类似用户界面皮肤之类的开发组都来凑热闹，马上就使 Copland 成为一个无法维护的项目。开出的计划越来越长，项目越来越多，但相关进展越来越少，完成速度越来越慢。即便做出了产品，连测试人手都不够。1995 年就有工程师指出，在 1996 年发布 Copland 纯粹是幻想，能 1997 年发布就不错了。</p>
+<p>1996年，Gil Amelio 已经掌权。在苹果电脑全球研发者大会上他开心地宣布，传说中的 Copland，也就是 System 8 的开发版会在当年夏天发布，而正式版在秋天就可以送到每位用户手上。时任 TidBITs 编辑的 Matt Neuburg 有幸见到了这个传说中的系统。令他大吃一惊的是，这个系统在当时只能打开或关闭文件，而无法对文本文件进行编辑，甚至所有用户界面的文本框都不能输字。哪 怕什么都没做，整个系统也会随机崩溃，而崩溃甚至会造成文件系统损坏。参加演示的苹果员工，则需要不断守在旁边，他们的工作是不断地格式化已崩溃的计算机 磁盘，然后重装系统。那年夏天，第零个测试版送到一小簇不明真相的开发者手中，把那些脆弱的没见过世面的人吓得半死。就连 Apple 内部都开玩笑说 Copland 的正式发布日期可能得推迟到 2030 年。</p>
+<p>Gil Amelio 心急如焚，希望 Copland 快点走到正道上来。作为 Gil Amelio 永远的好朋友，Ellen Hancock 就在这个乱糟糟的时候来到了 Apple。她的职务，正是担任这个乱糟糟项目的负责人。她亲自下访各小组体察民情，了解情况。毕竟在 IBM 干了近三十年，她依靠自己过人的判断力在 2~3 个月内便得出结论，Copland 这个项目是没有指望的，就按目前 Apple 这样的状态，Copland 永远都不可能发布，还不如早点取消了好。在短期内，先把 Copland 中的一些有用的成果一点点合并到老的 Mac OS 中，并且抓紧从外部购买一个全新系统来满足 Apple 的需要。正是她的这个结论，结束了 Apple 长达五年的纠结，使公司重新走向正轨。整个 PC 的黄金时代已经过去，Apple 想要翻身，还有很长一段路要走。Gil Amelio 支持了 Ellen Hancock 的计划。1996 年 8 月，Apple 取消 Copland 项目。开发预览版的 CD 封套都已制完，每个邮包上的地址都已打印就续，而 CD 却从未曾制出。</p>
+<p>1996-1998 年是 Apple 最混乱的几年。在商业上，有一阵曾传出 Apple 要被 Sun 收购的消息。更有意思的是，《连线》杂志在 1997 年的六月还发表了一篇文章，名为《101 种拯救 Apple 的方法》，其中一条说最好的方式是 Apple 让自己被 Motorola 买下，成为 Motorola 的一个部门，做 PowerPC 系列产品。以当时的眼光来看这些建议非常讽刺好笑，以今天的眼光看更为好笑。而 Ellen Hancock 在这段时间内的出色工作，成功地挽救了 Apple。</p>
+<p>首先，Ellen Hancock 的对内政策是继续 Mac OS 7.5 的开发工作，一步步把 Copland 中的技术并到 7.5 中。同时，也大量购买第三方的系统增强包，包括插件管理工具、层次化菜单等技术。Apple 把它们买过来，整合到现有的系统中。整个老系统在新系统尚未完成的时候不断更新，至 2000 年已出到 9.0 版，尽可能地留住了老用户。并且，前面提到的蓝盒（Blue Box）也作为后来新 Mac OS X 系统的一部分，支持用户运行经典 Mac OS 的程序。</p>
+<p>而对外政策更是一个大手笔。Ellen Hancock 协助 Gil Amelio 在 Apple 之外找寻操作系统技术。在 IBM 和 Microsoft 合作 Big Blue 的经验告诉她，购买一个操作系统的使用权问题多多，最好的计划是整个一并买下来。因此，Gil Amelio 开始和当时看好的 Be 谈，却因价格问题没有成功，最终转而收购了 NeXT。而 Apple 合并 NeXT 后，NeXTSTEP 就演化为 Rhapsody，并最终成为 Mac OS X。这些事情我们今后会详细再谈。</p>
+<p>买完 NeXT 后，Steve Jobs 执政，Gil Amelio 因任 CEO 期间 Apple 亏损严重而被炒。Steve Jobs 把信得过的人（很多是前 NeXT 员工）拉拢到周围，开始新政，而同 Gil Amelio 有关的 Ellen Hancock 则在人事变动中被疏远。Steve Jobs 甚至在很多场合称她为“笨蛋”。Ellen Hancock 最终于 1998 年主动辞职。事后同 Gil Amelio 以及 Apple 的创始人之一 Steve Wozniak 一同创业，但始终不景气，她的辉煌时代已经过去。</p>
+<p>Gil Amelio 总结他在 Apple 时期的工作时说：“Apple 是一艘底部有洞漏水的船，而我的工作是把这船引向正道。”（Apple is like a ship with a hole in a bottom, leaking water, and my job is to get this ship pointed in the right direction. ）Ellen Hancock 虽然同 Gil Amelio 一样，不知如何去堵这个漏水的洞，但正是由于她在 Apple 的出色表现，不但把船引到了正道上，还找来了有能力堵这个洞的人。</p>
+<p>Mac OS X 背后的故事（二）——Linus Torvalds的短视</p>
+<p>本文主要的故事来源是 Linus Torvalds 的自传《Just for Fun: The Story of an Accidental Revolutionary》。</p>
+<p>Steve Jobs 于 1997 年回归 Apple</p>
+<p>Steve Jobs对Mac OS X的考虑</p>
+<p>1997 年，Steve Jobs 回归，开发下一代操作系统的工作被提上日程。此刻的时代背景是像 Linux 这样的开源软件大行其道。随着网络的发展，使得像 Red Hat、VA Linux 之类的企业成为爆发户，把泡沫越吹越大。Steve Jobs 承认 Linux 的好处，甚至在若干年后介绍 Mac OS X 底层的 Darwin 时还不忘在幻灯片上写道：Darwin 是类似 Linux 的系统。而当时精明的 Steve Jobs 在考虑下面几个问题。</p>
+<p>第一，NeXTSTEP 的内核和外围工具中，BSD 代码维护起来需要大量人力，而且各分支的 BSD 发展显然不如 Linux 快。很多功能都没有，需要 Apple 自己做。</p>
+<p>第二，像 Apple 这样的小公司，需要借力打力。Apple 的主要竞争对手是 Microsoft，而开源软件的矛头也是 Microsoft，如果联合起来干革命，不但能让自己得到一个好名声（Apple 事后一直自称是最大的开源软件公司），也可以获得可观利益，从而对 Microsoft 造成压力。</p>
+<p>第三，也是最重要的，联合各开源组织能够推动 Mac OS 的发展。毕竟开源软件中像 GCC 之类都是很成熟的项目，Apple 用起来省时省力，投点钱就有大效益，多好。</p>
+<p>所以，把 Linux 内核作为 Mac OS X 的重要组成部分的想法被这位伟大的智者想了出来。Apple 之前也有开发 Linux 的经验，比如在 Steve Jobs 回归之前，Apple 就和 OSF 合作开始把 Mach 内核移植到 PowerPC 上（Apple 是最大的 PowerPC 玩家，而 OSF 是最大的 Mach 玩家），并把 Linux 作为服务跑在 Mach 上。这个系统就是 MkLinux，我们在后续的连载中还会提到这个系统，因为它不但对 Linux 的移植性作出了重要的贡献，也对后来的 Mac OS X 的 XNU 内核技术起到了相当重要的作用。</p>
+<p>如果可以采用 Linux 作为系统重要组成部分，并且这个构想能够取得在开源软件界呼风唤雨的 Linus Torvalds 的认同，就能靠他在社区鼓动一大群开发者皈依 Apple 麾下，这是 Apple 很想看到的给力结局。有了这个指导思想，他便让秘书给 Linux 的开发者 Linus Torvalds 发了一个邮件，问他是不是有一到两小时的时间和 Steve Jobs 会面。不明真相的 Linus Torvalds 收到邮件后相当高兴，因为这是他第一次有机会去硅谷观摩。</p>
+<p>无果而终的会面</p>
+<p>Apple 总部 Infinity Loop 终于迎来了这位稀客，Steve Jobs 亲自接见，而先前任 NeXT 技术总监的 Avie Tevanian（这人的故事我们今后会提到）也参加了这次会谈。不用多说，这次讨论的内容自然是还处于未知状态的 Mac OS X。讨论算不上正式，但 Linus Torvalds 的愤青个性，却让谈判陷入僵局。</p>
+<p>Steve Jobs 自然搬出他 1997 年回归之际在 MacWorld 讲话时的那套理论，Apple 虽然很颓，但骨子里是个牛逼的公司。全世界桌面领域的真正玩家就两个，一个是 Apple，另一个是 Microsoft，两者加起来，构成百分之百的桌面用户群。所以，Linus 同学，你就从了我们吧，如果你从了我们，让我们把 Mac 架在 Linux 上，一大批桌面用户就是 Linux 用户啦，前景可是一片大好！</p>
+<p>而 Linus Torvalds 那时候牛啊，诸多大公司如 IBM、Red Hat 都围着他转。他可是企业家中的大红人，像 Apple 这样的企业根本就不在他眼里。作为一个开源软件的革命家，在他的想象中 Linux 的潜在用户应该比 Apple 还多。他始终相信，按照目前开源软件的发展态势，自己很快就能在桌面领域分到一杯羹。而且这个命题在他这种古怪性格下的直接推论是，即使我能占领桌面领 域，我也要摆出一副不在乎这个领域的态度来。所以实际上 Steve Jobs 的开场白一开始就失败了。</p>
+<p>接着，Avie Tevanian 向 Linus Torvalds 介绍了整个计划。他们想把 Mach 和 Linux 内核合并起来作为 Mac OS X 的基础，我估计 Linus Torvalds 是听错了（因为 Avie Tevanian 很早就意识到相比于微内核，混合内核有明显优势），他以为 Apple 想把 Linux 作为 Mach 的一个服务来跑（当然我个人认为，即使是合并 Mach 和 Linux 成为混合内核，依 Linus Torvalds 的愤青性格，依然是不可能接受的），这正让他回想到先前和 Tanenbaum 教授的笔战。并且，他也知道 Apple 和 IBM 合搞的失败项目 Taligent 正是用 Mach 的。</p>
+<p>Linus Torvalds 对于微内核有他自己的看法，之前也曾在不同的地方表述过。若把关于微内核的笔战去掉限制级敏感词的话可概括成两方面。一方面，设计一个微内核和相关的服 务，可能造成各种设计上的灾难。GNU/Hurd 早在八十年代末就考虑尝试在 Mach 上写一系列 Unix 的服务层，结果他们始终无法搞明白到底是让这些服务先发消息到另几个服务呢，还是考虑其他方案。所以直到 2011 年我写这篇文章时，Hurd 项目依然处于半死不活的状态。而另一方面，微内核的效率无法和传统内核相比，最简单的系统调用会涉及一系列底层服务的互相通信。所以很多研究者着手研究如 何把微内核的效率提上去，结果就导致微内核变得更加复杂。能提高微内核效率的很多研究成果都已在 Mach 项目中实现了。而在 Linus Torvalds 看来这恰使 Mach 成为了一个非常复杂的项目，并且效率也不怎么高。</p>
+<p>会谈时坐一旁的 Avie Tevanian 事实上是 Mach 最早的开发者之一，他热情地给 Linus 讲述 Mac OS X 系统蓝图。而 Linus 实际上早就不耐烦了。比如，Mac OS X 中，有一个模拟层，可让用户使用经典的 Mac OS 程序。这个技术极类似于现在跑在 Unix 系统上执行 Windows 程序的 Wine 。Apple 当时的考虑是这样，因为老的 Mac OS 在设计 API 时，就没有考虑到类似内存保护之类的问题，所以这层 API 必须废掉，Mac OS X 中所有的新程序必须采用 NeXT 的那套更先进的 API（根据我的考证，当时还没有 Carbon 这样的想法，而且事实上 Carbon 不管在 API 还是 ABI 上都和经典 Mac OS 不兼容）。而短期内已有的软件又不可能快速重写迁移至 Mac OS X。所以，如果用户需要使用老版 Mac OS 的第三方应用程序，就可以使用 Apple 提供的这个兼容层。但是由于刚才提到的原因，老版程序并不享受新版程序的待遇，因为模拟器本身运行多个老 Mac OS 任务时，和原先老版 Mac OS 一样，实际上只有一个进程，没有内存保护。这样做的好处是明显的，因为一方面老的程序在 Mac OS X 发布之初还能用，另一方面 Apple 又和老技术划清了界限，逼着开发者使用新技术，技术方面的原因是最重要的。但这个看似很正确的技术在 Linus Torvalds 看来是古怪的，他想当然地认为，完全可以运行多个不同的模拟器进程，来执行不同的任务，使得每个任务都可以享受内存保护。这种浪漫主义情调让他无比鄙视 Apple 员工的智商。而事后当笔者使用早期版本的 Mac OS X 时，发现 Linus Torvalds 的想法完全是不切实际的。因为这个模拟层本来就要占用不少的内存和 CPU，在处理器速度不及今日手机、内存无比精贵的 90 年代末，跑一堆模拟器进程无异于是和自己过不去。</p>
+<p>Steve Jobs 考虑到 Linus Torvalds 是开源软件的领军人物，便继续以开源为话题，动之以情，晓之以理。他告诉 Linus Torvalds，我们这个系统做出来后呢，所有的 Unix 层（非图形界面层），都会开源，所以事实上你加入我们，也是在给开源做贡献啊！而由于在开源圈子混久了，Linus Torvalds 对此丝亳不领情，他认为，有谁会想用一个底层是开源而图形界面是不开源的系统呢？所以，像笔者这样的用户被“代表”了。</p>
+<p>Mac OS X 与 Linux 分道扬镳</p>
+<p>总之，这次会面完全谈崩，两人站在不同的角度去看问题，加上 Steve Jobs 和 Linus Torvalds 都是个性鲜明、唯我独尊的人，技术和商业上的考虑都不同，所以会谈中双方简直就是鸡同鸭讲。这次讨论也使得 Apple 放弃 Linux，转而采用 FreeBSD 技术，并在 2001 年任命 FreeBSD 的发起者、领军人物 Jordan Hubbard 为 BSD 技术小组的经理，并在后来升为 Unix 技术总监。至于 Apple 的内核技术后来走向何方，我们下期再讲。</p>
+<p>笔者认为，Apple 和 Linus Torvarlds 的商谈破裂，以今天的眼光来看，是因 Linus Torvarlds 的自命清高和短视造成的。他不懂得尊重其他开发者的意见，并且不断抬扛。包括后来关于 C++ 的论战。Mac OS X 发布后，Linus Torvalds 又数次嘲笑 Mac 的技术落后，并说这些他在当年和 Steve Jobs 开会时就预料到了。直到最近，他终于有些成熟，对 Mac OS X 的观点开始缓合，但还是不忘批评 Mac 的文件系统就是垃圾（事实上，Linux 的也没好到哪去，至少 Apple 还搞过一阵 ZFS）。这种性格最终导致在 Mac OS X 和 iOS 大行其道的时候，Linus Torvalds 连兔子汤都不曾分到。</p>
+<p>而事实上这对 Apple 也是件好事。Apple 重要的是利益而不是折腾，即使是开源也是利益驱动。像类似 Linux 开发组那样自以为是但代码又写得差的开源项目，Apple 事后也遇到不少，比如 GCC 编译器项目组。虽然大把钞票扔进去，在先期能够解决一些问题，但时间长了这群人总和 Apple 过不去，并以自己在开源世界的地位恫吓之，最终 Apple 由于受不了这些项目组人员的态度、协议、代码质量，觉得还不如自己造轮子来得方便，因此 Apple 推动了类似 LLVM 这样宏伟的项目，并且在短短几年内，使其成为最领先的开源软件技术。这无异于扇了 Linux 小组、GCC 小组一记响亮的耳光。</p>
+<p>Mac OS X 背后的故事（三）Mach 之父 Avie Tevanian</p>
+<p>1975 年，美国罗彻斯特大学纽约分校，一组研究员正在做一个名为 RIG（Rochester’s Intelligent Gateway）的项目，它由 Jerry Feldman 主持设计。RIG 的目标是给所有本地以及远端的计算设备（比如磁盘、列印机、磁带、绘图机等）提供一组统一的访问方式，其作业系统称为 Aleph。为了实现所需要的功能，Aleph 的内核主要构建了一个进程交互（Interprocess Communication，IPC）的机制。RIG 的各进程，只要设置了目标端口，就可以彼此间发送信息。RIG 项目没过几年就被判了死刑，主要是缺少很多有用的功能，比如端口没有保护机制，一次最多只能发送 2KB 大小的信息（受硬件限制），也没有很好的网络支持等。不过在 20 世纪 70 年代，这个系统依然代表着当时作业系统设计的先进水平，比如除了进程交互外，每个进程还有内存保护的功能，这足以让 20 世纪 90 年代末都没有做出内存保护技术的 Apple 公司汗颜。</p>
+<p>该项目后来失败了，随后在 1979 年，RIG 的 Richard Rashid 博士毕业到卡内基-梅隆大学当教授，开始做 Accent 项目。它是一个网络作业系统，于 1981 年 4 月开始活跃开发。受 RIG 的影响，Accent 系统的亮点也在于可以使用 IPC，而且解决了很多 RIG 的不足。比如每个进程有 4GB 的虚拟内存空间，而且甚至连内核自已都可以被存入缓存页面，内存有先进的更新前拷贝（Copy-on-Write）功能，可以实现进程间大信息的传送等。 读者可以把 Accent 理解为支持虚拟内存技术，并且具有网络透明 IPC 功能的 RIG 内核。</p>
+<p>但过了几年，开发者们越来越对 Accent 失去兴趣。在 1980 年初，很多人觉得多核计算是计算机未来发展的潮流，但 Accent 内核在设计时并没有考虑到这些问题。而且，随着许多实验室纷纷购置性能更强劲的计算机，这就意味着 Accent 需要移植到新的目标架构上。此外，Unix 正大行其道，不管是在作业系统理论上还是在用户程序上，都成为最为流行的作业系统模式，而 Accent 并不是一个 Unix 系统，所以无法享受 Unix 世界的诸多美好。为了解决这个问题，研究人员决定把所有设计推翻重来，于是就有了一个全新的系统。</p>
+<p>在匹兹堡的一个雨天，卡内基-梅隆大学的 Avie Tevanian，此系统的最主要开发者，正打着伞和同学们在去吃午饭的路上。他们一边绕着无数的泥塘，一边构思给这个新系统取什么名字好。灵感突来， Avadis Tevanian 建议把这个系统叫作 Muck，引得同学们哈哈大笑。后来，Richard Rashid 和一位意大利同事 Dario Giuse 说起这玩笑，结果这位同事不经意地把 Muck 发为 Mach，遂把 Richard Rashid 笑翻，伟大的 Mach 系统因此得名。</p>
+<p>Mach 是一个受 Accent 启发而搞出的Unix兼容系统。那年，Unix 已经十六岁，而且依然是作业系统理论与实践开发的主要阵地。Unix 内核由于新加入的功能越来越多，变得越来越复杂。而 Mach 的一个主要目标就是尽量缩减 Unix 的各项服务，以使内核变得简单可维护。此项目从 1984 年开始，目标主要是包含完整的多任务支援、良好的硬件移植性，并要把大量服务移出内核作为跑在内核上的服务，以及提供与 Unix 的兼容性。</p>
+<p>Mach 使用纯 C 编写，所以在一定程度上保证了可移植性，这事实上为后面的 NeXT 向 PowerPC 移植以及 2005 年的向 Intel 移植提供了很重要的前提。而为了缩减内核该管的任务，Mach 做得很绝，只提供内存和处理器管理。类似于档案系统、网络、输入输出等功能都作为单个的系统进程，独立执行于内核之上。Mach 的开发过程以 4.3 BSD 作为起点，以 RIG 的 Accent 作为参考，采纳 DEC 的虚拟内存设计思路，逐步开发，以新写的代码代替 BSD 的代码。两年后的 1986 年，虽然没能把系统服务完全分离于内核之外，但已颇见成效。Mach 第一版大功告成，组员发表会议论文，成为操作系统史上里程碑式的经典，引发操作系统业界的“微内核”学潮，如今学习作业系统设计的皆需学习此文，二十五年 来被引用一千二百余次。</p>
+<p>这篇文章主要讲了两方面内容：IPC 和虚拟内存。在 IPC 方面，Mach 把复杂的消息传送机制分为四个独立的清晰概念—任务、线程、端口、信息。任务是拥有一组系统资源的对象，允许线程在其中执行；线程是执行的基本单位，拥有 一个任务的上下文，并且共享任务中的资源。</p>
+<p>由于该论文的影响力，所以项目得到了 OSF（Open Software Foundation）在内的很多投资。当然了，学术和工程永远存在差距，所以即使是最受欢迎的 Mach 2.5 其实仍然是一个包括大多数 BSD 服务层的单内核。但包括 NeXTSTEP、OSF/1 在内的很多操作系统都采用 Mach 作为其内核技术，原因是广大研究人员依然相信微内核代表着未来。虽然 Mach 2.5 的效率比传统的 Unix 系统稍低一些，但研究者们表示情绪淡定，因为 Mach 支持多处理器系统，可以利用多线程把任务处理得飞快，相比之下其他 Unix 内核并没有多处理器的完善支援，因此 Mach 效率稍低完全可以接受。但随着真正把 Mach 和 BSD 服务完全脱离的 Mach 3 微内核面世，研究人员们的情绪就再也淡定不起来了。因为服务和内核分离后，任务间的 IPC 数量暴涨，一个简单的 Unix 系统调用要涉及到十多个开端口、设权限、发送、收取消息的操作，哪怕是使用数年后的 1997 年的硬件，跑一个系统调用密集的程序，Mach 的效率要比一般的 Unix 系统慢 50%，而且根本没有什么好方法来解决这个问题。</p>
+<p>所以 Mach 3 出来后，虽有少数微内核信徒继续执著地改进 Mach，或者开始其他微内核比如 L4 的研究。但学术界对 Mach 的兴趣大减，因而 Mach 3 也成为最后一版。项目解散后，Richard Rashid 去了微软研究院。</p>
+<p>再说我们的主角 Avie Tevanian，他 1987 年博士毕业去了 NeXT。这家公司刚刚由 Steve Jobs 成立两年，这两年 Steve Jobs 啥正经事都没干，只是花了十万美元雇 Paul Rand 设计了一个公司商标。直到 Avie Tevanian 加入后，这个公司才开始干实事。1987 年公司确认要开发一个面向研究人员使用的计算机工作站，于是软硬件的开发工作紧锣密鼓地展开。硬件组由领导过 Apple Lisa 的 Rich Page 原班人马负责，而软件则由 Avie Tevanian 负责，计划开发一个有图形界面的操作系统 NeXTSTEP。由于 Avie Tevanian 是 Mach 主要的开发者，自然 NeXTSTEP 就基于 Mach 了。1988 年 10 月 12 日，NeXT 发布预览版（0.8版），并于 1989 年 9 月 18 日发布 1.0 版（注：NeXTSTEP）。</p>
+<p>作为 NeXTSTEP 系统的内核，NeXT 分支的 Mach 经历了不少变化。NeXTSTEP 0.8 主要使用 Mach 2.0 版，而稍后的 NeXTSTEP 1.0 版主要基于 Mach 2.5 版，包含一个自己定制的当时最新的 4.3 BSD 服务层。从 3.1 版开始，NeXT 分支的 Mach 还包括一个全新的设备驱动框架， 名为 Driver Kit，仅供 x86 系列的硬件使用。和 Mach 以及 BSD 代码不同，Driver Kit 是使用 Objective-C 写的。为什么是一个面向对象的语言呢？看 NeXTSTEP 3.3 的 DriverKit 文档。读者大概就会发现，NeXTSTEP 把所有硬件设备理解为对象，而我们知道，对象之间有继承关系，比如，磁盘（IODisk物件）属于输入输出设备（IODevice物件）的子物件，而磁盘 （IODisk）本身又是逻辑磁盘（IOLogicalDisk）的父物件。硬件的初始化对应于每个物件的初始化（init方法），硬件又有读、写，所以 可以用 getter/setter 的方法。因此，DriverKit 是一个非常有特色的实现。而且由于 Objective-C 的效率很高，依赖很少（Objective-C 程序可以直接被编译器翻译成等价的C语言程序并编译，而 Objective-C 的运行库 libobjc 也以高效著称），所以也是编写驱动的良好选择。几年后的 IOKit 其实就是个 DriverKit 的翻版。</p>
+<p>这时，NeXTSTEP 操作系统大获成功，风险投资商们纷纷购买，但硬件却始终卖不出去（注：Aaron Hillegass《Cocoa Programming for Mac OS X》前言），所以 NeXT 砍掉了硬件部门专做软件，更是使 NeXTSTEP 发展到了巅峰时期，同时支持 68K、x86、PA-RISC 和 SPARC 等硬件，但颇有意味的是它就是不支持 PowerPC 架构。它可以同时产生一个包含所有架构可执行码的二进制文件，来使开发的程序在所有平台上执行。这个功能也影响了后来 Mac OS X 的技术。Mac OS X 10.4 时代有两件跨时代意义的事情，一件是 Apple 搞出了 64 位的 Power Mac，开发者可以发布一个包含64位和32位程序的单一可执行文件，而无需让用户去区分；另一件是和 Intel 合作。Apple 正式发表了 Universal Binary 技术，可以一个 Mach-O 文件同时包含 Intel 和 PowerPC 的指令。这非常贴心的设计（要知道，大多数电脑用户根本不知道 Intel、PowerPC、64位、32位等技术）就是来自于 Mach 的技术。</p>
+<p>NeXTSTEP 3.3 后，NeXTSTEP 因为 NeXT 和 Sun 的合作改名为 OPENSTEP，1996 年发布 4.0 版，到 1997 年 2 月 4 日，NeXT 被 Apple 收购之前，期间内核改进除源码同步到 Mach 3.0 版外不明，而且出于不知道的原因，我手头的 OPENSTEP 正式版光盘中，居然找不到 DriverKit 的发布说明和编程文档，故不作详述。不过这段时间，Apple 的活动值得好好一说。之前在《Linus Torvalds的短视》中，我们曾提到，1996 年，Apple 和 OSF 曾经合作，把 Mach 移到 PowerPC Mac 上，再把 Linux 作为单一的服务跑在 Mach 上，这个项目叫做 MkLinux。在 1996 年发布基于 Mach 3.0 和 Linux 1.3 的预览版，并更新到 2002 年结束其历史使命，对 Mach 在 PowerPC 的移植性上做出了重要贡献。这个 PowerPC 版的 Mach 被叫作 osfmk 分支，也正是现在 Mac OS X 中用的分支。当然了，NeXT 被合并后做了大量修改。</p>
+<p>Apple 收购 NeXT 后，Mach 被确定作为未来的操作系统核心。Avie Tevanian 被选为软件开发部的总裁。合并所有项目的号角吹响后，上层的 OpenStep API 和老版 Mac OS 的部件开始合并，而 Mach 也经历重大变化。主要是一方面，Mach 使用了 osfmk 分支，但依然包含 4.3 BSD 服务；另一方面，DriverKit 被 IOKit 取代。这是 Apple 走得很被动的一步。因为当时外界普遍对 Objective-C 不看好，逼着 Apple 走老版 Mac OS API 的老路。而 Apple 自己对 Objective-C 也很不自信，甚至想索性换用 Java 了事（我们以后会谈及这段不自信的历史）。所以 IOKit 是一个 C++ 的驱动架构，来符合大众口味。这些改变最早在 Rhapsody 中出现（我们以后也会有一期 Rhapsody 的专题）。但由于 C++ 是门很恐怖的语言，所以 Apple 又把 C++ 给阉割了，去掉了多重继承、模板、运行时动态以及异常，让开发者使用这种对于 Objective-C 来说换汤不换药的 Clean C++ 来做驱动。但公正地说，IOKit 对于 Driver Kit 是有不少改进的，比如 IOKit 可以写在用户空间跑的驱动（虽然大多仍是跑在内核空间上的），因而驱动挂了而系统不会挂。另外 IOKit 考虑到了计算机发展的趋势，所以在电源管理、即插即用、动态加载上做得更好。</p>
+<p>但各位也知道，C++ 程序得用专门的运行库才能跑，所以 Mach 中又加入了一个叫作 libkern 的库负责 C++ 相关的功能，同时，还有一个 libsa 的库提供一些类似二分查找、排序等基本算法之类的功能。最后和硬件相关的还有一个叫作 pexpert（Platform Expert）的库，负责收集硬件设备列表、检测机器种类（比如处理器速度等）、解析启动参数等杂活。</p>
+<p>至此，Mac OS X 的内核完全形成，形成 BSD、IOKit、Mach osfmk 三足鼎立的态势，并有 pexpert、libkern、libsa 作为基础。Apple 称它的内核杰作为 XNU。其代码开源，请读者移步Source Browser，每个部 分的代码都独立存放在一个文件夹中，条理清晰，不妨一读。</p>
+<p>由于 4.3 BSD 已是过眼烟云，Apple 后来投入大量资源扶持 FreeBSD 开发。2001 年，Apple 将 FreeBSD 的发起者、领军人物 Jordan Hubbard 收入麾下，并在 Mac OS X 10.3 时基本同步到 FreeBSD 5 的代码（注：XNU: The Kernel）。</p>
+<p>另外，Apple 的开发也同时反馈到 FreeBSD 小组，包括 FreeBSD 6.2 内核引入的 AUDIT (man audit 或参见http://manpages.unixforum.co.uk/man-pages/unix/freebsd-6.2/4/audit-man-page.html)，后来 FreeBSD 8引入的 libdispatch （GCD - FreeBSD Wiki, 在 Apple 这项技术叫 Grand Central Dispatch，是 Mac OS X 10.6 主推的新功能，FreeBSD 基本在 Mac OS X 10.6 上市的同时就拥有这项最新技术），以及 FreeBSD-CURRENT 中的 LLVM-Clang，全是 Apple 的手笔。从 1999 年开始，FreeBSD 源码仓库可以搜索到 Apple 提供的大量的补丁以及新功能。</p>
+<p>Mac OS X 早期版本不太稳定，所以会内核崩溃。10.0 版本会直接像 Linux 或者 BSD 那样打出回溯信息，很不美观，所以 Apple 在 10.2 版本开始设计了一个多国语言的图片告诉用户你的内核崩溃了，以让内核崩得看起来更优雅一点。由于包含四国语言，被国内用户戏称为“四国”（注：优雅的图片 见下图，详见 OS X: About kernel panics），这是 XNU 的 Mach osfmk 部分的功能。但从 10.3~10.4 版本开始，系统越发稳定，正常使用已很少见到内核崩溃。而且，内核提供的服务也越来越多，使得 Mac OS X 成为一个完善的系统。</p>
+<p>21 世纪 XNU 架构方面的最重大改动是支持了 PPC64（10.4 版本时代）、x86 架构（其实本来也一直支持的，以后讲 Apple 的 Intel 迁移时详谈）、x86_64（64位支持是苹果长年努力逐步展开的。10.4 时代 32 位内核支持载入 64 位的用户程序，10.5 系统提供 64 位的Cocoa框架，但系统大部分程序都是 32 位的，10.6 时代内核支持以 64 位模式启动，但在不少硬件上这是非默认的方式，但系统大量程序已被改写并编译为 64 位的二进制程序，10.7 时代内核默认以 64 位模式启动。）和 ARM 架构（iPhone 和 iPad 使用 XNU 内核）等多个新架构。</p>
+<p>而其中 ARM 架构的支持别具意义。但 2006 年 5 月 31 日，功成名就的 Avie Tevanian 离开 Apple 另谋发展，此时，离 Apple 的 iPhone 奇迹发生，只有不到一年时间。</p>
+<p>Mac OS X 背后的故事（四）—— 政客的跨界</p>
+<p>2000 年，美国总统大选，由于选票设计问题，时任美国副总统的 Al Gore 败北。2000 年 12 月 13 日，在一番重新计票的大折腾不起作用后，曾经意气风发的 Al Gore 拖着疲惫的身子，走上讲台，发表了认输讲话（参见 Al Gore《2000 Presidential Concession Speech》），从此退出政坛。一般国家领导人的退政生活其往往松愉快，出出日记，学用哲学，或者像多才多艺的李岚清不但去各地推广古典音乐，更是玩起 了篆刻（参见《南方周末》2006 年 5 月 11 日《老常委的卸任生活》），克林顿先生都成立个基金会来帮助社会预防和治疗爱滋。 Al Gore 也没闲着，他找到了让他感兴趣的去处——Apple 总部，并成为董事之一。</p>
+<p>Mac OS X 和 Al Gore 的双赢</p>
+<p>2003 年 5 月 19 日，Apple 的启示中罕见性地登出了《前总统 Al Gore 加入 Apple 董事会》的快讯。文中提到，Al Gore 总统是一个正宗果粉，他一直用 Mac 计算机，而且还会用 Final Cut Pro 来编辑他的视频。Al Gore 也不掩饰他对 Apple 技术的热爱，他表示对 Mac OS X 的开发极感兴趣，并且也对 Apple 在开放源代码运动中的贡献喜闻乐见。他虚心地说，想在这个让 Apple 起死回生的董事会好好观摩并学习。</p>
+<p>Al Gore 的加盟让 Apple 一跃成为电子产品的代言人</p>
+<p>苹果公司的 CEO Steve Jobs 表示 Al Gore 曾经管理过世界最大的组织——美国政府，期间显示出的经验和智慧对苹果公司是笔巨大的财富。Al Gore 将成为出色的董事会主席，苹果将以他把苹果公司作为职业生涯的开始为荣。</p>
+<p>这之后，Al Gore 在 Apple 内部的决策究竟起了什么作用，和 Mac OS X 的开发有何关联，在正式的渠道很少有史料，但是他后来的各种公开活动，却给 Mac OS X 的技术做足了广告，而且很多证据表明，他正是使 Apple 从被绿色人士攻击的众矢之的的状态，成为业界注重电子产品环保领头羊的主要推手。</p>
+<p>Al Gore 重新进入普通人的视野是在 2006 年，他推出了自己参与制作和演出的纪录片《An Inconvenient Truth》（《难以忽视的真相》）和同名书籍。这部长达 94 分钟的影片，在西方国家引起了广大的回响，以 Al Gore 的一场演讲和人生的回忆作为两条主线，详细、科普地向民众介绍了全球变暖问题的科学证据及美国政府掩盖问题的真相。该片以发人深省的立意、详尽的科学数 据、平实的讲演风格，加上苹果高超的技术，而获得了广泛的好评并一举获得年度奥斯卡最佳纪录片奖，使得这位美国前副总统摇身一变，成为好莱坞明星。</p>
+<p>为什么单单一场简单的讲话，就能做出一部电影，还能得到奥斯卡这样学院艺术奖的亲睐？是因为讲话内容无懈可击 么？事后有很多科学家站出来表示，虽然影片内容有积极的意义，但其实也有很多被夸大的科学数据、假设和结论。试思索，该片之所以成功，甚至成为诸多演讲培 训机构的重要分析案例，除了数据、观点、论述外，还有以下几个原因。</p>
+<p>首先，这场演讲由苹果主导的技术和艺术的设计。Al Gore 向来以说不清想表达的内容而著称。他经常因为讲得过于专业或者缺乏好的表述方法以致于民众完全不懂他在讲些什么。他的早期讲话用现在的眼光看就是个少将 体，比如“互联网…网…我…这个…那个…那个…怎么说呢…我想这个…这…这…这…我啊…我啊…就是说…互联网是我发明的！”因此作为苹果展现公司软实力的 重要机会，苹果非常重视这场讲话，请公司的图形设计小组带领完成各种所需设计，苹果甚至特地请来了专业的设计公司 Duarte 来进行讲稿和讲话内容的安排。因此，不管是内容安排、图形设计还是技术支持，Al Gore 都有强有力的后盾，他们能够帮助Al Gore 完成任何想达到的目标。不论是 FinalCut 还是 Keynote，一旦缺少任何 Al Gore 想要的功能，Apple 都可以给他开小灶实现。在片末的走马灯字幕中，有大量 Apple 的 Keynote 组、Final Cut 组和图形设计组的员工名字，以示鸣谢。</p>
+<p>其次，上面这些资源的相互合作，也使得 Al Gore 的这场讲话的讲稿被精心制作，体现了精心设计的电子稿演讲所能达到的最高成就。苹果公司向来重视演讲，也是各大企业中最会通过演讲来营销产品的公司。每年 的 MacWorld 和 WWDC 的 Steve Jobs 讲话都会吸引百万人在计算机前观看。每场讲话都好戏连连，台下的观众的欢呼和掌声不亚于著名歌星的演唱会。这种风格显然给 Al Gore 的讲话风格带来很大的影响。在影片中，观众看不到一个传统的 bulletpoint（PowerPoint 用户常爱使用的表示讲话结构的方法），取而代之的是高清的照片、视频，来展现环境的严峻性。观众不再会为枯燥无味的技术词语而搞得昏昏欲睡，因为屏幕上的 一切都是如此真实，各种科学现象由动画效果配合，使其浅显易懂。另外，所有的数据、图表都精心使用软件制作，使其一目了然，表现准确而美观大方，而且 Al Gore 时而还会玩些小噱头，比如讲到现在的温室气体浓度是多么高时，他甚至爬上工作人员为他准备的升降机，升到舞台顶端，来告诉观众，数据已经突破图表的顶端 了。现在距笔者观赏完这部影片，已经五年过去了，但影片中的灾难场景、冰川融化的影片段落、海平面上升的计算机模拟、二氧化碳浓度的数据图表，至今都记得 一清二楚，足以见得其表现力是何等深入人心。甚至有人在调侃他在 2000 年的竞选演说是怎么回事？难道就是缺少了这些科技元素？</p>
+<p>最后，Mac OS X 的各项技术也是这部片子的重要保证。Duarte 公司的 Ted Boda 表示（该幻灯片的设计师之一），Mac OS X 系统本身的反锯齿功能把文字、图片、矢量图标表现得栩栩如生，使得幻灯片充满美感。QuickTime 技术作为 Mac OS X 的一块重要基石，又使得 Keynote 不需任何插件就能引入任何图片和影像，所以类似使用 Illustrator、Photoshop、AfterEffects 等软件做出的图片、影像或动昼，不需要任何转换过程就能直接拖到 Keynote 中。哪怕 1920×1080 的高清视频，都可以轻松插入，流畅播放。他们组根本想象不出在 Windows上 使用 PowerPoint 会成什么样子。</p>
+<p>可以说，没有 Mac OS X，就没有这部电影。而实际上这部电影的作用远胜过任何一部 Apple 公司的广告。片中 Al Gore 时时拿着 PowerBook 的笔记本，在办公室用 Safari 查网页，字体渲染真实而美观，甚至在车上都不忘打开笔记本用 Keynote 做几张幻灯片，就更不用说电影中 Keynote 幻灯片曾经迷倒多少 Windows 用户了。向笔者推荐这部电影的好朋友了解到这些全是 Apple 技术的功劳时，拥有一台 Mac 就成为其人生梦想。</p>
+<p>环保卫士的 Apple 之路</p>
+<p>作为环保人士，Al Gore 对 Apple 的策略的影响也不容忽视。Apple 向来被各环保组织长期批评，即使 Apple 长年不断地改进这方面问题，但绿色人士依然不买帐。哪怕在稍后的 2007 年，也仍有包括 GreenPeace 在内的七十多个组织联名写信给 Al Gore，敦促 Apple 更重视环境问题，信中指责 Apple 仍在大量使用 PVC 和 BFRs 等对环境有害的材料，也不注重对自家产品的回收。由于 Al Gore 是 Apple 董事会成员，使得这个问题受到了 Apple 的广泛关注。Apple 在 2007 年后史无前例地迈开大步，大力推广环保计划（要求全世界的 IT 制造商们逐步弃用 PVC 等有毒的化学用品进行生产），让 Apple 一跃成为注重电子产品环境保护问题的领头羊。</p>
+<p>从制造材料上，2007 年 8 月发布的 iMac 成为分水岭。这款产品的设计主要使用可完全被回收的玻璃屏和铝外框，减小了塑料等不环保物质的使用，此后苹果一发不可收拾，把这项革命进行到底，从手机到 笔记本，都全番设计。2008 年的 MacBook Air 引出的 Unibody 技术是这场革命的代表产品，不但在外观上还是工程上做到极致，在环保上更是让各绿色组织无可挑剔。</p>
+<p>在造势上，Apple 现在每项主要产品的都有“环境”的标签页，从制造、运输、耗电、回收等性能情况分产品详细列出。Apple 甚至在包装上都动足脑筋，尽量减少每个产品的包装，使得同一架飞机可以运输更多的产品，从而在运输相同数量产品的情况下减少飞机温室气体的总排放量。</p>
+<p>Mac OS X 的各项节电功能的开发更是不用说了。休眠、调整空闲时的屏幕亮度、硬盘转速等常规功能自然越做越好。而系统的多项技术能使程序更优地分配使用中央处理器和 显示卡。甚至系统还能在用户打字时，每两键之间的空隙减少处理器的占用从而节省击键之间的功耗，这使得 Mac OS X 不但更节约能源，笔记本的电池使用时间也不断提高。而这一切的变化，和 Al Gore 似乎都有着千丝万缕的联系。</p>
+<p>由于《An Inconvenient Truth》中的讲话让 Al Gore 的观点深入人心，同时也对美国政府在京都议定的决策产生重大的压力，挪威诺贝尔委员会决定把 2007 年的诺贝尔和平奖颁给了 Al Gore，以表彰其在全球环境问题方面的努力，同时苹果的主页上全版刊发新闻，以示祝贺。贺词如下：</p>
+<p>Al has put his heart and soul, and much of his life during the past several years, into alerting and educating us all on the climate crisis. We are bursting with pride for Al and this historic recognition of his global contributions. (Al Gore 在过去几年殚心积虑，全身心地投入对公众关于气候危机的警示和教育中。我们为他这次所得的荣誉和他全球性贡献的历史性承认感到无比自豪。）</p>
+<p>或许，由于 Al Gore 在计算机领域的一贯低调（他也是 Google 的高级顾问），他在这些企业的工作很少被报道出来，但是他在政界的跨界身份是显而易见的。Al Gore 在他的人生道路将何去何从，我们不得而知，但是从各种媒体信息的披露可以看出，Al Gore 对计算机事业的热衷，对环保问题的投入，可能是美国历任领导人中最突出的。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="">bimizx&#39;blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
