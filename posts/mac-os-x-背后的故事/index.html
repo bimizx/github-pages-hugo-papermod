@@ -521,17 +521,17 @@
 <p><strong>如何应用 GCD</strong></p>
 <p>当然，老王卖瓜，自卖自夸，没有实际的例子，是不能让读者信服的。下面我们就来简单讲解 GCD 的技术。</p>
 <p>首先是块状语法，是一个对 C、C++ 和 Objective-C 语言的扩展。用来描述一个任务，用^引导的大括号括起来。比如最简单的：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#f92672">^</span>{ printf (<span style="color:#960050;background-color:#1e0010">“</span>hello world<span style="color:#960050;background-color:#1e0010">\</span>n<span style="color:#960050;background-color:#1e0010">”</span>);}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#f92672">^</span>{ <span style="color:#a6e22e">printf</span> (<span style="color:#960050;background-color:#1e0010">“</span>hello world<span style="color:#960050;background-color:#1e0010">\</span>n<span style="color:#960050;background-color:#1e0010">”</span>);}
 </span></span></code></pre></div><p>则 x 就变成了一个块。如果执行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>x ();
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#a6e22e">x</span> ();
 </span></span></code></pre></div><p>那么程序会打印 hello world 出来。当然，blcok 像函数一样，可以跟参数，比如：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> spec <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> (<span style="color:#f92672">^</span>MyBlock)(<span style="color:#66d9ef">int</span>) <span style="color:#f92672">=</span> <span style="color:#f92672">^</span>(<span style="color:#66d9ef">int</span> aNum){
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> aNum <span style="color:#f92672">*</span> spec;
 </span></span><span style="display:flex;"><span>}; 
 </span></span><span style="display:flex;"><span>spec <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>printf (<span style="color:#960050;background-color:#1e0010">“</span>Block value is<span style="color:#f92672">%</span>d<span style="color:#960050;background-color:#1e0010">”</span>,
-</span></span><span style="display:flex;"><span>MyBlock (<span style="color:#ae81ff">4</span>));
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">printf</span> (<span style="color:#960050;background-color:#1e0010">“</span>Block value is<span style="color:#f92672">%</span>d<span style="color:#960050;background-color:#1e0010">”</span>,
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">MyBlock</span> (<span style="color:#ae81ff">4</span>));
 </span></span></code></pre></div><p>这里 MyBlock 是一个带参数的代码块。</p>
 <p><img loading="lazy" src="https://pic4.zhimg.com/80/bb4bacbfe7c37c0253dfdb937a42709f_1440w.webp" alt="img"  />
 </p>
@@ -572,12 +572,12 @@
 <p>OpenCL 则是苹果为这个新局面画下的蓝图。这项技术初期全称为 Open Computing Library（如果留意苹果早期宣传广告的话），后改名为 Open Computing Language。这项技术从本质上来说，和 CUDA 并没有太多的两样，但由于苹果在借鉴他人技术并把他人技术改得更棒这一点上是出了名的，所以 OpenCL 很好地解决了以上所有问题。</p>
 <p>下面简单介绍一下这个框架。OpenCL 技术的结构十分清晰，对程序员来说，它是一个 Mac OS X 的 Framework，定义了两套标准，一套是一个 C 语言的编程界面（API），使得开发者创建、拷贝、回收 GPU 使用的对象，同时也包含检测处理器、为该处理器编译并调用核心程序（kernel）相关的接口；另一套是 OpenCL 核心程序语言的定义，是一套基于 C99 发展而来的语言。</p>
 <p>例如我们有两个大数组，1024 维的 a 和 1024 维的 b（当然，1024不算大，OpenCL 往往用来处理十万、百万数量级的任务），我们把两个数组对应的元素加和，结果是一个 1024 维的数组c。C 程序员很容易能写出下面的程序：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>　　<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1024</span>; i<span style="color:#f92672">++</span>)
-</span></span><span style="display:flex;"><span>　　c[i]<span style="color:#f92672">=</span>a[i]<span style="color:#f92672">+</span>b[i];
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">　　</span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">1024</span>; i<span style="color:#f92672">++</span>)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">　　</span>c[i]<span style="color:#f92672">=</span>a[i]<span style="color:#f92672">+</span>b[i];
 </span></span></code></pre></div><p>OpenCL 的核心程序，则是取每个独立的可并行的循环分支，即上面程序中的 c[i]=a[i]+b[i]。所以核心程序大概是下面这样：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>　　__kernel <span style="color:#a6e22e">add</span> (<span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>a, <span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>b, <span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>c){
-</span></span><span style="display:flex;"><span>　　<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> get_global_id (<span style="color:#ae81ff">0</span>);
-</span></span><span style="display:flex;"><span>　　c[i]<span style="color:#f92672">=</span>a[i]<span style="color:#f92672">+</span>b[i];}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">　　</span>__kernel <span style="color:#a6e22e">add</span> (<span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>a, <span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>b, <span style="color:#66d9ef">float</span> <span style="color:#f92672">*</span>c){
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">　　</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#a6e22e">get_global_id</span> (<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">　　</span>c[i]<span style="color:#f92672">=</span>a[i]<span style="color:#f92672">+</span>b[i];}
 </span></span></code></pre></div><p>其中，get_global_id () 函数可以返回当前函数是全局中的第几个元素。把该程序保存为 add.cl，就是一个 OpenCL 的核心程序，为 C99 语言的一个子集。</p>
 <p>使用 OpenCL 的 API 就能调用这个核心程序。每个 OpenCL 程序基本上是模式化地照搬下面流程：</p>
 <p>\1. 探测硬件（用 clGetDeviceIDs 函数护取计算设备（可以指定使用 GPU 或是 CPU），用 clCreateContext 函数来新建一个上下文（context），用 clCreateCommandQueue 函数针对设备和上下文新建一个命令队列）；</p>
